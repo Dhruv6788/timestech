@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.active {
+    color: #28abe4;
+}
+
+.top-cover {
+    background: url(../public/IT_office.jpg) no-repeat center center/cover;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #28abe3;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }

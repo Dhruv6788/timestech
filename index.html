@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timestech | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-x-hidden">
+  <main class="relative">
+
+    <button id="scrollToTopBtn"
+      class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <nav class="w-screen z-[1] sticky h-20 left-0 top-0 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <div class="flex-shrink-0">
+            <a href="#" id="logo" class="logo text-black text-3xl font-black font-[Montserrat]">Timestech</a>
+          </div>
+
+          <div class="hidden md:flex space-x-10">
+            <a href="/"
+              class="text-[#28abe3] uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">Home</a>
+            <a href="./pages/about.html"
+              class="text-black uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">About
+              Us</a>
+            <a href="./pages/services.html"
+              class="text-black uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">Our
+              Services</a>
+            <a href="#" class="text-black uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">Contact
+              Us</a>
+          </div>
+
+          <div class="flex md:hidden">
+            <button id="menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-black hover:bg-[#28abe3] focus:outline-none">
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white">
+          <a href="/"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base active font-medium hover:bg-[#28abe3]">Home</a>
+          <a href="/pages/about.html"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">About</a>
+          <a href="#"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">Services</a>
+          <a href="#"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="background w-screen relative z-[-1] h-[calc(100vh-80px)]">
+      <div class="w-full h-full absolute bg-black opacity-[.8]">
+        <div class="w-full h-full absolute flex flex-col justify-center items-center opacity-[1]">
+          <h1 class="text-white font-[Montserrat] font-black text-3xl text-center">Unlock Your Digital Future</h1>
+          <p class="text-white text-center px-10 mt-4">Experience the cutting-edge technology solutions that propel your
+            business forward. Explore the limitless possibilities with Timestech Softwares.</p>
+          <button class="px-5 text-white py-4 bg-[#28abe4] mt-10 rounded-full">Discover More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section  -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+
+      <div class="flex flex-col items-center">
+        <h2 class="text-3xl text-center font-bold font-[Montserrat] text-black">We Are Timestech Softwares</h2>
+        <p class="text-center mt-4">Welcome to Timestech Softwares, where innovation meets excellence.</p>
+        <div class="line w-[60px] mt-4 h-[1px] bg-[#28abe4]"></div>
+      </div>
+
+      <div class="w-full mt-4">
+        <img src="./public/IT_team.jpg" alt="office Image">
+        <p class="w-full text-center text-md lg:text-2xl lg:mt-5 font-medium mt-4">"At Timestech Softwares, we
+          specialize in delivering a
+          diversified portfolio
+          of IT solutions, including Software Development, Cloud Services, Cybersecurity, and IT Consulting. Our
+          extensive network of experts empowers our teams across the U.A.E, Middle East, and U.S. markets."</p>
+      </div>
+
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="flex flex-col items-center">
+          <h2 class="text-3xl font-black font-[Montserrat] text-black">Our Services</h2>
+          <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+          <div class="line w-[60px] mt-4 h-[1px] bg-[#28abe4]"></div>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-white text-xl font-black font-[Montserrat] text-center mt-4">Web Development</h3>
+            <p class="text-white text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quidem.</p>
+          </div>
+
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-white text-xl font-black font-[Montserrat] text-center mt-4">App Development</h3>
+            <p class="text-white text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quidem.</p>
+          </div>
+
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-white text-xl font-black font-[Montserrat] text-center mt-4">Logo Design</h3>
+            <p class="text-white text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quidem.</p>
+          </div>
+
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-white text-xl font-black font-[Montserrat] text-center mt-4">Banner Design</h3>
+            <p class="text-white text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quidem.</p>
+          </div>
+
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-white text-xl font-black font-[Montserrat] text-center mt-4">IT Consultancy</h3>
+            <p class="text-white text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quidem.</p>
+          </div>
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-white text-xl font-black font-[Montserrat] text-center mt-4">Web Hosting</h3>
+            <p class="text-white text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+              quidem.</p>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Testimonials Using Swiper js -->
+      <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-8 font-[Montserrat]">What Our Clients Say</h2>
+          <p class="text-xl text-gray-600 text-center mb-12 font-[Montserrat]">Hear from our satisfied customers about
+            their experience with Timestech</p>
+          <div class="line w-[60px] mt-4 h-[1px] mx-auto bg-[#28abe4]"></div>
+        </div>
+      </section>
+
+      <swiper-container class="mySwiper p-5" style="width: 100%; height: 500px;" autoplay-delay="5000"
+        autoplay-disable-on-interaction="false">
+        <swiper-slide class="text-black w-full bg-[#28abe4] rounded-lg">
+          <div class="flex flex-col items-center justify-center h-full p-4">
+            <p class="text-white text-lg font-[Montserrat] font-medium italic mb-2 text-center px-5 mt-4">
+              "Timestech transformed our
+              digital
+              presence. Their web
+              development expertise and innovative solutions have significantly boosted our online performance."</p>
+            <h4 class="text-black text-3xl mt-5 font-bold font-[Montserrat]">Rajesh Sharma</h4>
+            <p class="text-black text-sm font-[Montserrat]">CEO, Tech Innovations Inc.</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="text-black w-full bg-[#28abe4] rounded-lg">
+          <div class="flex flex-col items-center justify-center h-full p-4">
+            <p class="text-white text-lg font-[Montserrat] italic mb-2 text-center px-5 mt-4">"Timestech's IT
+              consultancy services have been instrumental in streamlining our operations and enhancing our
+              cybersecurity."</p>
+            <h4 class="text-black text-3xl mt-5 font-bold font-[Montserrat]">Priya Patel</h4>
+            <p class="text-black text-sm font-[Montserrat]">CTO, GreenTech Solutions</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="text-black w-full bg-[#28abe4] rounded-lg">
+          <div class="flex flex-col items-center justify-center h-full p-4">
+            <p class="text-white text-lg font-[Montserrat] italic mb-2 text-center px-5 mt-4">"Timestech's web hosting
+              services have provided us with a reliable and scalable infrastructure for our online applications."</p>
+            <h4 class="text-black text-3xl font-bold font-[Montserrat]">Amit Singh</h4>
+            <p class="text-black text-sm font-[Montserrat]">Founder, E-commerce Ventures</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="text-black w-full bg-[#28abe4] rounded-lg">
+          <div class="flex flex-col items-center justify-center h-full p-4">
+            <p class="text-white text-lg font-[Montserrat] italic mb-2 text-center px-5 mt-4">"Timestech's team of
+              experts has been a valuable resource in helping us navigate the complexities of IT."</p>
+            <h4 class="text-black text-3xl font-bold font-[Montserrat]">Sunita Verma</h4>
+            <p class="text-black text-sm font-[Montserrat]">IT Manager, Healthcare Solutions</p>
+          </div>
+        </swiper-slide>
+
+        <swiper-slide class="text-black w-full bg-[#28abe4] rounded-lg">
+          <div class="flex flex-col items-center justify-center h-full p-4">
+            <p class="text-white text-lg font-[Montserrat] italic mb-2 text-center px-5 mt-4">"Timestech's innovative
+              approach to software development has enabled us to stay ahead of the competition."</p>
+            <h4 class="text-black text-3xl font-bold font-[Montserrat]">Vikram Gupta</h4>
+            <p class="text-black text-sm font-[Montserrat]">Product Manager, FinTech Startups</p>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 font-[Montserrat]">Contact Us</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[Montserrat]">Get in Touch</h3>
+            <form>
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-[Montserrat] mb-2">Name</label>
+                <input type="text" id="name" name="name"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required>
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-[Montserrat] mb-2">Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-[Montserrat] mb-2">Message</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required></textarea>
+              </div>
+              <button type="submit"
+                class="bg-[#28abe3] text-white font-[Montserrat] py-2 px-4 rounded-md hover:bg-[#1c8ab3] transition duration-300">Send
+                Message</button>
+            </form>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[Montserrat]">Contact Information</h3>
+            <ul class="space-y-4">
+              <li class="flex items-center">
+                <i class="ri-map-pin-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[Montserrat]">123 Tech Street, Silicon Valley, CA 94000</span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-phone-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[Montserrat]">+1 (555) 123-4567</span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-mail-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[Montserrat]">info@timestech.com</span>
+              </li>
+            </ul>
+            <div class="mt-6 flex justify-center flex-col items-center">
+              <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Follow Us</h4>
+              <div class="flex space-x-4">
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-facebook-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-twitter-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-linkedin-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-instagram-fill text-2xl"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="bg-gray-100 py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-8 font-[Montserrat] text-gray-800">Quick Navigation Links</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Company</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">About
+                  Us</a>
+              </li>
+              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Our
+                  Team</a></li>
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Careers</a>
+              </li>
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Services</h3>
+            <ul class="space-y-2">
+              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Web
+                  Development</a></li>
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Mobile Apps</a>
+              </li>
+              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Cloud
+                  Solutions</a></li>
+              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">IT
+                  Consulting</a></li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Resources</h3>
+            <ul class="space-y-2">
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Blog</a></li>
+              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Case
+                  Studies</a></li>
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Whitepapers</a>
+              </li>
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">FAQs</a></li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Legal</h3>
+            <ul class="space-y-2">
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Privacy
+                  Policy</a></li>
+              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Terms
+                  of
+                  Service</a></li>
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Cookie
+                  Policy</a></li>
+              <li><a href="#"
+                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Sitemap</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p>&copy; 2024 Timestech Softwares. All rights reserved.</p>
+          </div>
+          <div class="text-center md:text-right">
+            <p>Designed and developed by <a href="/" class="text-[#28abe3] hover:underline">Timestech Team</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script type="module" src="/main.js"></script>
+
+</body>
+
+</html>
