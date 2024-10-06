@@ -1,6 +1,5 @@
-import "remixicon/fonts/remixicon.css";
+import "./styles/remicicon.css";
 import "./style.css";
-
 
 const menuButton = document.getElementById("menu-button");
 const mobileMenu = document.getElementById("mobile-menu");
