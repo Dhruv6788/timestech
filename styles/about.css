@@ -5,24 +5,25 @@
 
 
 .active {
-    color: #28abe4;
+  color: #28abe4;
 }
 
 .top-cover {
-    background: url(../public/IT_office.jpg) no-repeat center center/cover;
+  background: url(../public/IT_office.jpg) no-repeat center center/cover;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #28abe3;
-  }
-  
-  ::-webkit-scrollbar-button {
-    display: none;
-  }
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28abe3;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}

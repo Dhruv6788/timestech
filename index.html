@@ -12,14 +12,15 @@
 
 <body class="overflow-x-hidden">
 
+  <div id="preloader" class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center">
+    <img src="./public/loader.gif" alt="">
+  </div>
 
-  <main class="relative">
-
+  <main id="main" class="relative hidden">
     <button id="scrollToTopBtn"
       class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
       <i class="fas fa-arrow-up"></i>
     </button>
-
     <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
@@ -374,6 +375,11 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="main.js"></script>
 
+  <script>
+    window.addEventListener('load', ()=>{
+      document.getElementById('preloader').style.display = 'none';
+      document.getElementById('main').classList.remove('hidden');
+    })
+  </script>
 </body>
-
 </html>
