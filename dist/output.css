@@ -695,6 +695,14 @@ video {
   z-index: 1;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
+.z-\[4\] {
+  z-index: 4;
+}
+
 .float-start {
   float: inline-start;
 }
@@ -2252,6 +2260,11 @@ video {
   padding-bottom: 1.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .pb-3 {
   padding-bottom: 0.75rem;
 }
@@ -2911,6 +2924,10 @@ video {
   forced-color-adjust: none;
 }
 
+.active {
+  color: #28abe4;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -3100,5 +3117,3 @@ video {
     }
   }
 }
-
-
