@@ -5,11 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timestech | Home</title>
-  <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" as="style"
-    onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
-  </noscript>
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" as="style" onload="this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"></noscript>
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
   <link rel="preload" href="./public/IT_office.jpg" as="image">
   <link rel="preload" href="./public/IT_team.jpg" as="image">
   <link rel="stylesheet" href="./dist/output.css">
@@ -27,6 +25,7 @@
       class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
       <i class="ri ri-arrow-up-line"></i>
     </button>
+    
     <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-20">
@@ -43,7 +42,7 @@
             <a href="./pages/services.html"
               class="text-black uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">Our
               Services</a>
-            <a href="#" class="text-black uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">Contact
+            <a href="./pages/contact.html" class="text-black uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">Contact
               Us</a>
           </div>
 
@@ -66,7 +65,7 @@
             class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">About</a>
           <a href="./pages/services.html"
             class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">Services</a>
-          <a href="#"
+          <a href="./pages/contact.html"
             class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">Contact</a>
         </div>
       </div>
@@ -75,24 +74,24 @@
     <div class="background w-screen relative z-[1] h-[calc(100vh-80px)]">
       <div class="w-full h-full absolute bg-black opacity-[.8]">
         <div class="w-full h-full absolute flex flex-col justify-center items-center opacity-[1]">
-          <h1 class="text-white font-[Montserrat] font-black text-3xl text-center">Unlock Your Digital Future</h1>
+          <h1 class="text-white font-[Montserrat] font-black text-3xl text-center" id="header-text">Unlock Your Digital Future</h1>
           <p class="text-white text-center px-10 mt-4">Experience the cutting-edge technology solutions that propel your
             business forward. Explore the limitless possibilities with Timestech Softwares.</p>
           <a href="./pages/about.html" class="px-5 text-white py-4 bg-[#28abe4] mt-10 rounded-full">Discover More</a>
         </div>
       </div>
     </div>
-
+   
     <!-- About Us Section  -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
 
       <div class="flex flex-col items-center">
         <h2 class="text-3xl text-center font-bold font-[Montserrat] text-black">We Are Timestech Softwares</h2>
         <p class="text-center mt-4">Welcome to Timestech Softwares, where innovation meets excellence.</p>
-        <div class="line w-[60px] mt-4 h-[1px] bg-[#28abe4]"></div>
+        <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
       </div>
 
-      <div class="w-full mt-4">
+      <div class="w-full mt-10">
         <img src="./public/IT_team.jpg" alt="office Image">
         <p class="w-full text-center text-md lg:text-2xl lg:mt-5 font-medium mt-4">"At Timestech Softwares, we
           specialize in delivering a
@@ -104,8 +103,8 @@
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div class="flex flex-col items-center">
           <h2 class="text-3xl font-black font-[Montserrat] text-black">Our Services</h2>
-          <p class="text-center mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-          <div class="line w-[60px] mt-4 h-[1px] bg-[#28abe4]"></div>
+          <p class="text-center mt-4">Explore our comprehensive range of services, designed to propel your business forward with the latest technology advancements.</p>
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
         </div>
 
 
@@ -169,11 +168,12 @@
 
       <!-- Testimonials Using Swiper js -->
       <section class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-8 font-[Montserrat]">What Our Clients Say</h2>
-          <p class="text-xl text-gray-600 text-center mb-12 font-[Montserrat]">Hear from our satisfied customers about
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col">
+          <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4 font-[Montserrat]">What Our Clients Say</h2>
+          <p class="text-gray-600 text-center font-[Montserrat]">Hear from our satisfied customers about
             their experience with Timestech</p>
-          <div class="line w-[60px] mt-4 h-[1px] mx-auto bg-[#28abe4]"></div>
+            <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+
         </div>
       </section>
 
@@ -233,143 +233,79 @@
     </section>
 
     <!-- Contact Us -->
+   
     <section id="contact" class="bg-gray-100 py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 font-[Montserrat]">Contact Us</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-semibold mb-4 font-[Montserrat]">Get in Touch</h3>
-            <form>
-              <div class="mb-4">
-                <label for="name" class="block text-gray-700 font-[Montserrat] mb-2">Name</label>
-                <input type="text" id="name" name="name"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                  required>
+          <h2 class="text-3xl font-bold text-center text-gray-900 mb-8 font-[Montserrat]">Contact Us</h2>
+          <div class="w-20 h-1 bg-[#28abe3] mx-auto"></div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+              <div class="bg-white rounded-lg shadow-md p-6">
+                  <h3 class="text-xl font-semibold mb-4 font-[Montserrat]">Get in Touch</h3>
+                  <form action="https://formspree.io/f/manywpeq" method="POST">
+                      <div class="mb-4">
+                          <label for="name" class="block text-gray-700 font-[Montserrat] mb-2">Name</label>
+                          <input type="text" id="name" name="name"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                              required>
+                      </div>
+                      <div class="mb-4">
+                          <label for="email" class="block text-gray-700 font-[Montserrat] mb-2">Email</label>
+                          <input type="email" id="email" name="email"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                              required>
+                      </div>
+                      <div class="mb-4">
+                          <label for="message" class="block text-gray-700 font-[Montserrat] mb-2">Message</label>
+                          <textarea id="message" name="message" rows="4"
+                              class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                              required></textarea>
+                      </div>
+                      <button type="submit"
+                          class="bg-[#28abe3] text-white font-[Montserrat] py-2 px-4 rounded-md hover:bg-[#1c8ab3] transition duration-300">Send
+                          Message</button>
+                  </form>
               </div>
-              <div class="mb-4">
-                <label for="email" class="block text-gray-700 font-[Montserrat] mb-2">Email</label>
-                <input type="email" id="email" name="email"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                  required>
+              <div class="bg-white rounded-lg shadow-md p-6">
+                  <h3 class="text-xl font-semibold mb-4 font-[Montserrat]">Contact Information</h3>
+                  <ul class="space-y-4">
+                      <li class="flex items-center">
+                          <i class="ri-map-pin-line text-[#28abe3] text-xl mr-3"></i>
+                          <span class="font-[Montserrat]">10 Shree Raj Residency, Sisva-Valvod Rd, Sisva, Gujarat 388530</span>
+                      </li>
+                      <li class="flex items-center">
+                          <i class="ri-phone-line text-[#28abe3] text-xl mr-3"></i>
+                          <span class="font-[Montserrat]">+91 97259 39392</span>
+                      </li>
+                      <li class="flex items-center">
+                          <i class="ri-mail-line text-[#28abe3] text-xl mr-3"></i>
+                          <span class="font-[Montserrat]">timestacksoftwares@gmai.com</span>
+                      </li>
+                  </ul>
+                  <div class="mt-6 flex justify-center flex-col items-center">
+                      <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Follow Us</h4>
+                      <div class="flex space-x-4">
+                          <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i
+                                  class="ri-facebook-fill text-2xl"></i></a>
+                          <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i
+                                  class="ri-twitter-fill text-2xl"></i></a>
+                          <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i
+                                  class="ri-linkedin-fill text-2xl"></i></a>
+                          <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i
+                                  class="ri-instagram-fill text-2xl"></i></a>
+                      </div>
+                  </div>
               </div>
-              <div class="mb-4">
-                <label for="message" class="block text-gray-700 font-[Montserrat] mb-2">Message</label>
-                <textarea id="message" name="message" rows="4"
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                  required></textarea>
-              </div>
-              <button type="submit"
-                class="bg-[#28abe3] text-white font-[Montserrat] py-2 px-4 rounded-md hover:bg-[#1c8ab3] transition duration-300">Send
-                Message</button>
-            </form>
           </div>
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-semibold mb-4 font-[Montserrat]">Contact Information</h3>
-            <ul class="space-y-4">
-              <li class="flex items-center">
-                <i class="ri-map-pin-line text-[#28abe3] text-xl mr-3"></i>
-                <span class="font-[Montserrat]">123 Tech Street, Silicon Valley, CA 94000</span>
-              </li>
-              <li class="flex items-center">
-                <i class="ri-phone-line text-[#28abe3] text-xl mr-3"></i>
-                <span class="font-[Montserrat]">+1 (555) 123-4567</span>
-              </li>
-              <li class="flex items-center">
-                <i class="ri-mail-line text-[#28abe3] text-xl mr-3"></i>
-                <span class="font-[Montserrat]">info@timestech.com</span>
-              </li>
-            </ul>
-            <div class="mt-6 flex justify-center flex-col items-center">
-              <h4 class="text-lg font-semibold mb-2 font-[Montserrat]">Follow Us</h4>
-              <div class="flex space-x-4">
-                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-facebook-fill text-2xl"></i></a>
-                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-twitter-fill text-2xl"></i></a>
-                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-linkedin-fill text-2xl"></i></a>
-                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-instagram-fill text-2xl"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-
-    <!-- Quick Navigation -->
-    <section class="bg-gray-100 py-12">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold text-center mb-8 font-[Montserrat] text-gray-800">Quick Navigation Links</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Company</h3>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">About
-                  Us</a>
-              </li>
-              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Our
-                  Team</a></li>
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Careers</a>
-              </li>
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Services</h3>
-            <ul class="space-y-2">
-              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Web
-                  Development</a></li>
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Mobile Apps</a>
-              </li>
-              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Cloud
-                  Solutions</a></li>
-              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">IT
-                  Consulting</a></li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Resources</h3>
-            <ul class="space-y-2">
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Blog</a></li>
-              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Case
-                  Studies</a></li>
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Whitepapers</a>
-              </li>
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">FAQs</a></li>
-            </ul>
-          </div>
-          <div class="bg-white rounded-lg shadow-md p-6">
-            <h3 class="text-xl font-semibold mb-4 font-[Montserrat] text-[#28abe3]">Legal</h3>
-            <ul class="space-y-2">
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Privacy
-                  Policy</a></li>
-              <li><a href="#" class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Terms
-                  of
-                  Service</a></li>
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Cookie
-                  Policy</a></li>
-              <li><a href="#"
-                  class="text-gray-600 hover:text-[#28abe3] transition duration-300 font-[Montserrat]">Sitemap</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+  </section>
 
     <!-- Footer Section -->
     <footer class="bg-gray-800 text-white py-6">
       <div class="mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col md:flex-row justify-center items-center">
           <div class="text-center md:text-left mb-4 md:mb-0">
-            <p>&copy; Copyright 2024. All Rights Reserved to Futuristic Trade DMCC | Design and Developed by <a
-                href="/timestech" class="text-[#28abe4]">Timestech Softwares</a></p>
+            <p>&copy; Copyright 2024. All Rights Reserved to Timestech Softwares | Design and Developed by <a
+                href="/timestech" class="text-[#28abe4]">Timestech Team</a></p>
           </div>
         </div>
       </div>
@@ -378,7 +314,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   <script src="main.js"></script>
-
   <script>
     window.addEventListener('load', () => {
       document.getElementById('preloader').style.display = 'none';

@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timestech | Our Services</title>
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" as="style" onload="this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" as="style"
+        onload="this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+    </noscript>
     <link rel="stylesheet" href="../dist/output.css">
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body class="overflow-x-hidden">
-    <main>
+    <div id="preloader" class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center">
+        <img src="../public/loader.gif" alt="">
+      </div>
+    <main id="main" class="relative hidden">
         <button id="scrollToTopBtn"
             class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
             <i class="ri ri-arrow-up-line"></i>
@@ -35,7 +41,7 @@
                         <a href="./services.html"
                             class="text-black uppercase active text-md font-normal font-[Montserrat] hover:text-blue-300">Our
                             Services</a>
-                        <a href="#"
+                        <a href="/timestech/pages/contact.html"
                             class="text-black uppercase text-md font-normal font-[Montserrat] hover:text-blue-300">Contact
                             Us</a>
                     </div>
@@ -60,7 +66,7 @@
                         class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">About</a>
                     <a href="./services.html"
                         class="text-black block px-3 active py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">Services</a>
-                    <a href="#"
+                    <a href="/timestack/pages/contact.html"
                         class="text-black block px-3 py-2 uppercase rounded-md text-base font-medium hover:bg-[#28abe3]">Contact</a>
                 </div>
             </div>
@@ -285,21 +291,25 @@
         </section>
 
         <!-- Footer Section -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row justify-center items-center">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-              <p>&copy; Copyright 2024. All Rights Reserved to Futuristic Trade DMCC | Design and Developed by <a href="/timestech" class="text-[#28abe4]">Timestech Softwares</a></p>
+        <footer class="bg-gray-800 text-white py-6">
+            <div class="mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row justify-center items-center">
+                    <div class="text-center md:text-left mb-4 md:mb-0">
+                        <p>&copy; Copyright 2024. All Rights Reserved to Futuristic Trade DMCC | Design and Developed by
+                            <a href="/timestech" class="text-[#28abe4]">Timestech Softwares</a></p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </footer>
-
+        </footer>
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="module" src="../scripts/about.js"></script>
-
+    <script>
+        window.addEventListener('load', () => {
+            document.getElementById('preloader').style.display = 'none';
+            document.getElementById('main').classList.remove('hidden');
+        })
+    </script>
 </body>
 
 </html>

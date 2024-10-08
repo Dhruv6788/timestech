@@ -5,6 +5,21 @@ menuButton.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
 });
 
+let headerText = document.getElementById("header-text");
+let textArray = [
+  "Unlock Your Digital Future",
+  "Explore Cutting-Edge Solutions",
+  "Transform Your Business",
+];
+let index = 0;
+
+function changeHeaderText() {
+  headerText.textContent = textArray[index];
+  index = (index + 1) % textArray.length;
+}
+
+setInterval(changeHeaderText, 4000);
+
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 window.addEventListener("scroll", () => {
