@@ -1031,6 +1031,10 @@ video {
   transform: none;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .touch-auto {
   touch-action: auto;
 }
@@ -2977,6 +2981,11 @@ video {
 .hover\:bg-\[\#28abe3\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(40 171 227 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .hover\:font-bold:hover {
