@@ -4,6 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html,
 body {
   position: relative;
@@ -40,25 +42,20 @@ body {
   padding: 0;
 }
 
-swiper-container {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
 
-swiper-slide {
+/* .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-swiper-slide img {
+/* .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
+ */
