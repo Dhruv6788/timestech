@@ -50,16 +50,16 @@
     </button>
 
     <!-- Top Navigation Bar -->
-    <nav class="w-screen z-[4] sticky h-28 left-0 top-0 bg-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-20">
+    <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <div class="flex justify-between items-center h-full">
           <div class="flex-shrink-0">
-            <a href="/" id="logo" class="logo text-black text-3xl font-black font-[DM]">Timestech</a>
+            <a href="/" id="logo"
+              class="logo font-bold text-2xl md:text-2xl lg:text-2xl uppercase font-[Montserrat]">Timestech</a>
           </div>
 
           <div class="hidden md:flex space-x-10">
-            <a href="/"
-              class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300">Home</a>
+            <a href="/" class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300">Home</a>
             <a href="./pages/about.html"
               class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">About
               Us</a>
@@ -85,7 +85,7 @@
       <div id="mobile-menu" class="hidden md:hidden">
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white font-[DM]">
           <a href="/"
-            class="text-black block px-3 py-2 uppercase rounded-md text-base active font-semibold hover:bg-[red]">Home</a>
+            class="block px-3 py-2 uppercase rounded-md text-base active font-semibold hover:text-white hover:bg-[#28abe3]">Home</a>
           <a href="./pages/about.html"
             class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">About</a>
           <a href="./pages/services.html"
@@ -100,7 +100,9 @@
     <div class="background w-screen relative z-[1] h-[calc(100vh-80px)]">
       <div class="w-full h-full absolute bg-black opacity-[.8]">
         <div class="w-full h-full absolute flex flex-col justify-center items-center opacity-[1]">
-          <h1 class="text-white font-[DM] font-black text-7xl lg:text-5xl text-center" id="header-text">Unlock
+          <h1
+            class="text-white font-[DM] font-black text-3xl w-[87%] lg:text-5xl xl:text-4xl md:text-3xl sm:text-2xl text-center"
+            id="header-text">Unlock
             Your Digital
             Future</h1>
           <p class="text-white font-[DM] text-lg text-center px-10 mt-4">Experience the cutting-edge technology
@@ -212,24 +214,47 @@
 
       <div class="swiper w-full select-none font-[DM] bg-red-800">
         <div class="swiper-wrapper w-full h-[30vh]">
-          <div class="swiper-slide w-full bg-[#28abe3] text-white  flex justify-center items-center px-5 py-24">
-            <h4 class="font-bold lg:text-xl text-center lg:w-[70%]">"We are very happy with Timestech Softwares for creating
+
+          <div
+            class="swiper-slide w-full bg-[#28abe3] text-white  flex justify-center flex-col items-center px-5 py-24">
+            <h4 class="font-bold lg:text-xl text-center lg:w-[70%]">"We are very happy with Timestech Softwares for
+              creating
               the website for our company - Futuristic Trade DMCC. The design is sleek and professional, perfectly
               reflecting our brand. Navigation is very user friendly, making it easy for everyone to access important
               information and resources."</h4>
+
+            <div class="w-full flex justify-center items-center py-4">
+              <a href="https://www.futuristictradedmcc.com/"
+                class="bg-white text-[#28abe3] px-4 py-2 rounded-full">Visit Site <i
+                  class="ri-arrow-right-up-line"></i></a>
+            </div>
           </div>
-          <div class="swiper-slide w-full bg-[#28abe3] text-white   flex justify-center items-center px-5 py-24">
+
+          <div class="swiper-slide w-full bg-[#28abe3] text-white flex-col   flex justify-center items-center px-5 py-24">
             <h4 class="font-bold lg:text-xl text-center lg:w-[70%]">"We are absolutely thrilled with our new website for
               our gold trading company - TradeHouse Gold & General Trading LLC! The black and gold color scheme exudes
               sophistication and elegance, perfectly capturing the essence of our brand. The layout is very user
               friendly as well."</h4>
+
+            <div class="w-full flex justify-center items-center py-4">
+              <a href="https://www.tradehousegold.com/"
+                class="bg-white text-[#28abe3] px-4 py-2 rounded-full">Visit Site <i
+                  class="ri-arrow-right-up-line"></i></a>
+            </div>
           </div>
+
           <div
             class="swiper-slide w-full bg-[#28abe3] text-white  flex flex-col justify-center items-center  px-5 py-24">
             <h4 class="font-bold lg:text-xl text-center lg:w-[70%]">“I highly recommend this business.”
               Their customer service is second to none.
               The product quality is consistently outstanding, exceeding my expectations every time.
               I was completely impressed with their professionalism and customer service"</h4>
+
+            <div class="w-full flex justify-center items-center py-4">
+              <a href="https://camburg-engineering.com/"
+                class="bg-white text-[#28abe3] px-4 py-2 rounded-full">Visit Site <i
+                  class="ri-arrow-right-up-line"></i></a>
+            </div>
           </div>
 
         </div>
