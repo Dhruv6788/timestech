@@ -1,221 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- SEO Optimization -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Timestech | About</title>
-    <meta name="description" content="Learn more about Timestech, a leading IT solutions provider. Explore our mission, vision, and values.">
-    <meta name="keywords" content="Timestech, About Us, IT Solutions, Technology, Innovation">
-    <meta name="author" content="Timestech Team">
-    <meta property="og:title" content="Timestech | About">
-    <meta property="og:description" content="Learn more about Timestech, a leading IT solutions provider. Explore our mission, vision, and values.">
-    <meta property="og:image" content="../public/timestech_about.jpg">
-    <meta property="og:url" content="https://www.timestech.com/pages/about.html">
-    <meta property="og:site_name" content="Timestech">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Timestech | About">
-    <meta name="twitter:description" content="Learn more about Timestech, a leading IT solutions provider. Explore our mission, vision, and values.">
-    <meta name="twitter:image" content="../public/timestech_about.jpg">
-    <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" as="style"
-        onload="this.rel='stylesheet'">
+    <meta
+      name="description"
+      content="Learn more about Timestech, a leading IT solutions provider. Explore our mission, vision, and values."
+    />
+    <meta
+      name="keywords"
+      content="Timestech, About Us, IT Solutions, Technology, Innovation"
+    />
+    <meta name="author" content="Timestech Team" />
+    <meta property="og:title" content="Timestech | About" />
+    <meta
+      property="og:description"
+      content="Learn more about Timestech, a leading IT solutions provider. Explore our mission, vision, and values."
+    />
+    <meta property="og:image" content="../public/timestech_about.jpg" />
+    <meta
+      property="og:url"
+      content="https://www.timestech.com/pages/about.html"
+    />
+    <meta property="og:site_name" content="Timestech" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Timestech | About" />
+    <meta
+      name="twitter:description"
+      content="Learn more about Timestech, a leading IT solutions provider. Explore our mission, vision, and values."
+    />
+    <meta name="twitter:image" content="../public/timestech_about.jpg" />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
     <noscript>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      />
     </noscript>
-    <link rel="stylesheet" href="../dist/output.css">
-    <link rel="stylesheet" href="../style.css">
-</head>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
 
-<body class="overflow-x-hidden">
-    <div id="preloader" class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center">
-        <img src="../public/loader.gif" alt="">
+  <body class="overflow-x-hidden">
+    <div
+      id="preloader"
+      class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center"
+    >
+      <img src="../public/loader.gif" alt="" />
     </div>
     <main id="main" class="relative hidden">
-        <button id="scrollToTopBtn"
-            class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
-            <i class="ri ri-arrow-up-line"></i>
-        </button>
+      <button
+        id="scrollToTopBtn"
+        class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none"
+      >
+        <i class="ri ri-arrow-up-line"></i>
+      </button>
 
-        <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-              <div class="flex justify-between items-center h-full">
-                <div class="w-[50%] h-full flex justify-start items-center">
-                    <img src="../public/logo.png" alt="Timestech Logo" class="w-40 h-full object-contain">
-                  </div>
-        
-      
-                <div class="hidden md:flex space-x-10">
-                  <a href="/"
-                    class=" uppercase text-lg font-light font-[DM] hover:text-blue-300">Home</a>
-                  <a href="./about.html"
-                    class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300">About
-                    Us</a>
-                  <a href="./services.html"
-                    class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">Our
-                    Services</a>
-                  <a href="./contact.html"
-                    class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">Contact
-                    Us</a>
-                </div>
-      
-                <div class="flex md:hidden">
-                  <button id="menu-button"
-                    class="inline-flex items-center justify-center p-2 rounded-md text-black hover:bg-[#28abe3] focus:outline-none">
-                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                      stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                  </button>
-                </div>
-              </div>
+      <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+          <div class="flex justify-between items-center h-full">
+            <div class="w-[50%] h-full flex justify-start items-center">
+              <img
+                src="../public/logo.png"
+                alt="Timestech Logo"
+                class="w-40 h-full object-contain"
+              />
             </div>
 
-            
-            <div id="mobile-menu" class="hidden md:hidden">
-              <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white font-[DM]">
-                <a href="/"
-                  class="text-black block px-3 bg-white py-2 uppercase rounded-md text-base  font-semibold hover:bg-[#28abe3]">Home</a>
-                <a href="./about.html"
-                  class="text-black block px-3 py-2 uppercase rounded-md active text-base font-semibold hover:text-white hover:bg-[#28abe3]">About</a>
-                <a href="./services.html"
-                  class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">Services</a>
-                <a href="./contact.html"
-                  class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">Contact</a>
-              </div>
+            <div class="hidden md:flex space-x-10">
+              <a
+                href="/"
+                class="uppercase text-lg font-light font-[DM] hover:text-blue-300"
+                >Home</a
+              >
+              <a
+                href="./about.html"
+                class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300"
+                >About Us</a
+              >
+              <a
+                href="./services.html"
+                class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300"
+                >Our Services</a
+              >
+              <a
+                href="./contact.html"
+                class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300"
+                >Contact Us</a
+              >
             </div>
-          </nav>
-          
-        <div class="background w-screen relative z-[-1] bg-cover"
-            style="background-color: black; height: 30vh !important;">
-            <div class="w-full h-full absolute bg-black opacity-80 flex flex-col items-center justify-center">
-                <h1 class="text-white text-3xl font-bold font-[DM]">About Us</h1>
-                <h1 class="text-white font-[DM] font-medium mt-4 opacity-80">
-                    <a href="/">Home</a> <span class="font-extralight opacity-80">/</span> <a href="/pages/about.html">About Us</a>
-                </h1>
+
+            <div class="flex md:hidden">
+              <button
+                id="menu-button"
+                class="inline-flex items-center justify-center p-2 rounded-md text-black hover:bg-[#28abe3] focus:outline-none"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
             </div>
+          </div>
         </div>
 
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-            <div class="flex flex-col items-center mb-12">
-                <h2 class="text-4xl text-center font-bold font-[DM] text-black">About Timestech Softwares</h2>
-                <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+        <div id="mobile-menu" class="hidden md:hidden">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white font-[DM]">
+            <a
+              href="/"
+              class="text-black block px-3 bg-white py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
+              >Home</a
+            >
+            <a
+              href="./about.html"
+              class="text-black block px-3 py-2 uppercase rounded-md active text-base font-semibold hover:text-white hover:bg-[#28abe3]"
+              >About</a
+            >
+            <a
+              href="./services.html"
+              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
+              >Services</a
+            >
+            <a
+              href="./contact.html"
+              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="background w-screen relative z-[-1] bg-cover"
+        style="background-color: black; height: 30vh !important"
+      >
+        <div
+          class="w-full h-full absolute bg-black opacity-80 flex flex-col items-center justify-center"
+        >
+          <h1 class="text-white text-3xl font-bold font-[DM]">About Us</h1>
+          <h1 class="text-white font-[DM] font-medium mt-4 opacity-80">
+            <a href="/">Home</a>
+            <span class="font-extralight opacity-80">/</span>
+            <a href="/pages/about.html">About Us</a>
+          </h1>
+        </div>
+      </div>
+
+      <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="flex flex-col items-center mb-12">
+          <h2 class="text-4xl text-center font-bold font-[DM] text-black">
+            About Timestech Softwares
+          </h2>
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-center items-between w-full"
+        >
+          <div class="flex flex-col justify-center px-5 lg:w-1/2">
+            <h3
+              class="text-2xl text-center font-semibold font-[DM] mb-4 text-black p-1"
+            >
+              Innovating for Tomorrow
+            </h3>
+
+            <p class="text-gray-700 text-justify mt-5 text-lg">
+              At Timestech Softwares, we are passionate about leveraging
+              technology to solve complex business challenges. With a team of
+              skilled professionals and years of industry experience, we deliver
+              cutting-edge IT solutions tailored to meet the unique needs of our
+              clients.
+            </p>
+
+            <p class="text-gray-700 mt-5 text-justify text-lg">
+              Our commitment to excellence and innovation has positioned us as a
+              leading IT company in the U.A.E, Middle East, and U.S. markets. We
+              specialize in a wide range of services including Software
+              Development, Cloud Services, Cybersecurity, and IT Consulting.
+            </p>
+
+            <a
+              href="/timestech/pages/services.html"
+              class="bg-[#28abe3] text-white py-2 px-6 text-lg mt-5 rounded-full inline-block hover:bg-[#1c8abf] transition duration-300 text-center"
+              >Learn More About Our Services
+            </a>
+          </div>
+
+          <div class="flex items-center justify-center mt-10 lg:w-1/2">
+            <img
+              src="../public/IT_team.jpg"
+              alt="Timestech Team"
+              class="rounded-lg shadow-lg lg:max-w-[70%]"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- Our Mission -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+              <h3 class="text-3xl font-bold font-[DM] text-black mb-4">
+                Our Mission
+              </h3>
+              <div class="w-16 h-1 bg-[#28abe3] mb-6"></div>
+              <p class="text-gray-700 mb-4 text-lg text-justify">
+                At Timestech Softwares, our mission is to empower businesses
+                through innovative technology solutions. We strive to deliver
+                cutting-edge software and IT services that drive efficiency,
+                growth, and success for our clients across the globe.
+              </p>
+              <p class="text-gray-700 text-lg text-justify">
+                We are committed to fostering long-term partnerships, staying at
+                the forefront of technological advancements, and maintaining the
+                highest standards of quality and customer satisfaction.
+              </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-[10vw]">
-                <div class="flex flex-col justify-center">
-                    <h3 class="text-3xl font-semibold font-[DM] mb-4">Innovating for Tomorrow</h3>
-                    <p class="text-gray-700 text-justify mt-5 text-xl">
-                        At Timestech Softwares, we are passionate about leveraging technology to solve complex business
-                        challenges. With a team of skilled professionals and years of industry experience, we deliver
-                        cutting-edge IT solutions tailored to meet the unique needs of our clients.
-                    </p>
-                    <p class="text-gray-700 mt-5 text-justify text-xl">
-                        Our commitment to excellence and innovation has positioned us as a leading IT company in the
-                        U.A.E, Middle East, and U.S. markets. We specialize in a wide range of services including
-                        Software Development, Cloud Services, Cybersecurity, and IT Consulting.
-                    </p>
-                    <a href="/timestech/pages/services.html"
-                        class="bg-[#28abe3] text-white py-2 px-6 text-xl mt-5 rounded-full inline-block hover:bg-[#1c8abf] transition duration-300 text-center">Learn
-                        More About Our Services</a>
-                </div>
-                <div class="flex items-center justify-center">
-                    <img src="../public/IT_team.jpg" alt="Timestech Team" class="rounded-lg shadow-lg max-w-full">
-                </div>
+            <!-- Our Vision -->
+            <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+              <h3 class="text-3xl font-bold font-[DM] text-black mb-4">
+                Our Vision
+              </h3>
+              <div class="w-16 h-1 bg-[#28abe3] mb-6"></div>
+
+              <p class="text-gray-700 text-lg text-justify">
+                Our vision is to be a global leader in IT solutions, recognized
+                for our innovation, expertise, and commitment to excellence. We
+                aim to shape the future of technology by continuously pushing
+                the boundaries of what's possible in software development,
+                expanding our reach to serve diverse markets and industries,
+                nurturing a culture of creativity, collaboration, and continuous
+                learning, and contributing to the digital transformation of
+                businesses worldwide.
+              </p>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section class="bg-gray-100 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold font-[DM] text-black">
+              Why Choose Us
+            </h2>
+            <div class="w-20 h-1 bg-[#28abe3] mt-4 mx-auto"></div>
+          </div>
 
-        <section class="py-20 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <!-- Our Mission -->
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                        <h3 class="text-3xl font-bold font-[DM] text-black mb-4">Our Mission</h3>
-                        <div class="w-16 h-1 bg-[#28abe3] mb-6"></div>
-                        <p class="text-gray-700 mb-4 text-xl">
-                            At Timestech Softwares, our mission is to empower businesses through innovative technology
-                            solutions. We strive to deliver cutting-edge software and IT services that drive efficiency,
-                            growth, and success for our clients across the globe.
-                        </p>
-                        <p class="text-gray-700 text-xl">
-                            We are committed to fostering long-term partnerships, staying at the forefront of
-                            technological advancements, and maintaining the highest standards of quality and customer
-                            satisfaction.
-                        </p>
-                    </div>
-
-                    <!-- Our Vision -->
-                    <div class="bg-gray-50 p-8 rounded-lg shadow-md">
-                        <h3 class="text-3xl font-bold font-[DM] text-black mb-4">Our Vision</h3>
-                        <div class="w-16 h-1 bg-[#28abe3] mb-6"></div>
-                      
-                        <p class="text-gray-700 text-xl">
-                            Our vision is to be a global leader in IT solutions, recognized for our innovation, expertise, and commitment to excellence. We aim to shape the future of technology by continuously pushing the boundaries of what's possible in software development, expanding our reach to serve diverse markets and industries, nurturing a culture of creativity, collaboration, and continuous learning, and contributing to the digital transformation of businesses worldwide.
-                        </p>
-                    </div>
-                </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 rounded-lg shadow-md bg-[#28abe3]">
+              <i class="fas fa-lightbulb text-4xl text-[#28abe3] mb-4"></i>
+              <h3 class="text-xl text-center font-semibold font-[DM] mb-2">
+                Innovative Solutions
+              </h3>
+              <p class="text-black text-center text-lg">
+                We stay ahead of the curve, bringing you the latest in
+                technology and methodologies.
+              </p>
             </div>
-        </section>
-
-        <section class="bg-gray-100 py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-bold font-[DM] text-black">Why Choose Us</h2>
-                    <div class="w-20 h-1 bg-[#28abe3] mt-4 mx-auto"></div>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class=" p-6 rounded-lg shadow-md bg-[#28abe3]">
-                        <i class="fas fa-lightbulb text-4xl text-[#28abe3] mb-4"></i>
-                        <h3 class="text-xl text-center font-semibold font-[DM] mb-2">Innovative Solutions</h3>
-                        <p class="text-black text-center text-lg">We stay ahead of the curve, bringing you the latest in technology and
-                            methodologies.</p>
-                    </div>
-                    <div class="bg-[#28abe3] p-6 rounded-lg shadow-md">
-                        <i class="fas fa-users text-4xl text-[#28abe3] mb-4"></i>
-                        <h3 class="text-xl font-semibold font-[DM] mb-2 text-center">Expert Team</h3>
-                        <p class="text-black text-center text-lg">Our diverse team of experts ensures top-notch solutions for every
-                            project.</p>
-                    </div>
-                    <div class="bg-[#28abe3] p-6 rounded-lg shadow-md">
-                        <i class="fas fa-globe text-4xl text-[#28abe3] mb-4"></i>
-                        <h3 class="text-xl text-center font-semibold font-[DM] mb-2">Global Reach</h3>
-                        <p class="text-black text-lg text-center">With a presence in multiple markets, we offer truly global IT
-                            solutions.</p>
-                    </div>
-                    <div class="bg-[#28abe3] p-6 rounded-lg shadow-md">
-                        <i class="fas fa-globe text-4xl text-[#28abe3] mb-4"></i>
-                        <h3 class="text-xl text-center font-semibold font-[DM] mb-2">Happy Customers</h3>
-                        <p class="text-black text-center text-lg">Join the lot's of satisfied customers who have experienced our exceptional service and quality products. Your happiness is our priority!</p>
-                    </div>
-                </div>
+            <div class="bg-[#28abe3] p-6 rounded-lg shadow-md">
+              <i class="fas fa-users text-4xl text-[#28abe3] mb-4"></i>
+              <h3 class="text-xl font-semibold font-[DM] mb-2 text-center">
+                Expert Team
+              </h3>
+              <p class="text-black text-center text-lg">
+                Our diverse team of experts ensures top-notch solutions for
+                every project.
+              </p>
             </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="bg-gray-800 text-white py-6">
-            <div class="mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex flex-col md:flex-row justify-center items-center">
-                    <div class="text-center md:text-left mb-4 md:mb-0">
-                        <p>&copy; Copyright 2024. All Rights Reserved to Futuristic Trade DMCC | Design and Developed by
-                            <a href="/timestech" class="text-[#28abe4]">Timestech Softwares</a>
-                        </p>
-                    </div>
-                </div>
+            <div class="bg-[#28abe3] p-6 rounded-lg shadow-md">
+              <i class="fas fa-globe text-4xl text-[#28abe3] mb-4"></i>
+              <h3 class="text-xl text-center font-semibold font-[DM] mb-2">
+                Global Reach
+              </h3>
+              <p class="text-black text-lg text-center">
+                With a presence in multiple markets, we offer truly global IT
+                solutions.
+              </p>
             </div>
-        </footer>
+            <div class="bg-[#28abe3] p-6 rounded-lg shadow-md">
+              <i class="fas fa-globe text-4xl text-[#28abe3] mb-4"></i>
+              <h3 class="text-xl text-center font-semibold font-[DM] mb-2">
+                Happy Customers
+              </h3>
+              <p class="text-black text-center text-lg">
+                Join the lot's of satisfied customers who have experienced our
+                exceptional service and quality products. Your happiness is our
+                priority!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Footer Section -->
+      <footer class="bg-gray-800 text-white py-6">
+        <div class="mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col md:flex-row justify-center items-center">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+              <p>
+                &copy; Copyright 2024. All Rights Reserved to Futuristic Trade
+                DMCC | Design and Developed by
+                <a href="/timestech" class="text-[#28abe4]"
+                  >Timestech Softwares</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="module" src="../scripts/about.js"></script>
     <script>
-        window.addEventListener('load', () => {
-            document.getElementById('preloader').style.display = 'none';
-            document.getElementById('main').classList.remove('hidden');
-        })
+      window.addEventListener("load", () => {
+        document.getElementById("preloader").style.display = "none";
+        document.getElementById("main").classList.remove("hidden");
+      });
     </script>
-</body>
-
+  </body>
 </html>
