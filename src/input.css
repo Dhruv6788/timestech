@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+
 .active {
     color: #28abe4;
+}
+
+body {
+    scroll-behavior: smooth;
 }

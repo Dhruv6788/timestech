@@ -44,6 +44,8 @@
         href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       />
     </noscript>
+    <link rel="preload" href="../public/IT_office.jpg" as="image" />
+    <link rel="preload" href="../public/IT_team.jpg" as="image" />
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="../style.css" />
   </head>
@@ -197,7 +199,7 @@
             </p>
 
             <a
-              href="/timestech/pages/services.html"
+              href="services.html" target="_blank"
               class="bg-[#28abe3] text-white py-2 px-6 text-lg mt-5 rounded-full inline-block hover:bg-[#1c8abf] transition duration-300 text-center"
               >Learn More About Our Services
             </a>
@@ -332,11 +334,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script type="module" src="../scripts/about.js"></script>
-    <script>
-      window.addEventListener("load", () => {
-        document.getElementById("preloader").style.display = "none";
-        document.getElementById("main").classList.remove("hidden");
-      });
-    </script>
   </body>
 </html>

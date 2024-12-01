@@ -43,6 +43,7 @@
         href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       />
     </noscript>
+    <link rel="preload" href="../public/IT_office.jpg" as="image" />
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="../style.css" />
   </head>
@@ -55,13 +56,13 @@
       <img src="../public/loader.gif" alt="" />
     </div>
     <main id="main" class="relative hidden">
+      <!-- Scrool to Top Button -->
       <button
         id="scrollToTopBtn"
         class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none"
       >
         <i class="ri ri-arrow-up-line"></i>
       </button>
-
       <!-- Top Navigation Bar -->
       <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
@@ -147,7 +148,6 @@
           </div>
         </div>
       </nav>
-
       <div
         class="background w-screen relative z-[-1] bg-cover"
         style="background-color: black; height: 30vh !important"
@@ -161,7 +161,6 @@
           </h1>
         </div>
       </div>
-
       <section class="services-section py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col items-center mb-12">
@@ -223,7 +222,6 @@
           </div>
         </div>
       </section>
-
       <!-- Web Developement -->
       <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -429,7 +427,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Logo & Banner Design -->
       <section class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex flex-col items-center mb-12">
@@ -528,7 +526,7 @@
           </div>
         </div>
       </section>
-
+      <!-- Contact Us Form -->
       <section id="contact" class="bg-gray-100 py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
@@ -633,7 +631,6 @@
           </div>
         </div>
       </section>
-
       <!-- Footer Section -->
       <footer class="bg-gray-800 text-white py-6">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
@@ -652,12 +649,6 @@
       </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="module" src="../scripts/about.js"></script>
-    <script>
-      window.addEventListener("load", () => {
-        document.getElementById("preloader").style.display = "none";
-        document.getElementById("main").classList.remove("hidden");
-      });
-    </script>
+    <script type="module" src="../scripts/services.js"></script>
   </body>
 </html>

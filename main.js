@@ -1,63 +1,66 @@
-import e from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";let menuButton=document.getElementById("menu-button"),mobileMenu=document.getElementById("mobile-menu");menuButton.addEventListener("click",()=>{mobileMenu.classList.toggle("hidden")}),window.addEventListener("load",()=>{document.getElementById("preloader").style.display="none",document.getElementById("main").classList.remove("hidden"),gsap.from("main",{opacity:0,duration:1.5})});let headerText=document.getElementById("header-text"),textArray=["Unlock Your Digital Future","Explore Cutting-Edge Solutions","Transform Your Business",],index=0;function changeHeaderText(){headerText.textContent=textArray[index],index=(index+1)%textArray.length}setInterval(changeHeaderText,4e3);let scrollToTopBtn=document.getElementById("scrollToTopBtn");window.addEventListener("scroll",()=>{window.scrollY>100?scrollToTopBtn.style.opacity="1":scrollToTopBtn.style.opacity="0"}),scrollToTopBtn.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});let swiperElement=document.getElementsByTagName("swiper-container");var swiper=new e(".swiper",{pagination:{el:".swiper-pagination",dynamicBullets:!0}});
+// import e from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";let menuButton=document.getElementById("menu-button"),mobileMenu=document.getElementById("mobile-menu");menuButton.addEventListener("click",()=>{mobileMenu.classList.toggle("hidden")}),window.addEventListener("load",()=>{document.getElementById("preloader").style.display="none",document.getElementById("main").classList.remove("hidden"),gsap.from("main",{opacity:0,duration:1.5})});let headerText=document.getElementById("header-text"),textArray=["Unlock Your Digital Future","Explore Cutting-Edge Solutions","Transform Your Business",],index=0;function changeHeaderText(){headerText.textContent=textArray[index],index=(index+1)%textArray.length}setInterval(changeHeaderText,4e3);let scrollToTopBtn=document.getElementById("scrollToTopBtn");window.addEventListener("scroll",()=>{window.scrollY>100?scrollToTopBtn.style.opacity="1":scrollToTopBtn.style.opacity="0"}),scrollToTopBtn.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});let swiperElement=document.getElementsByTagName("swiper-container");var swiper=new e(".swiper",{pagination:{el:".swiper-pagination",dynamicBullets:!0}});
 
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
 
+const menuButton = document.getElementById("menu-button");
+const mobileMenu = document.getElementById("mobile-menu");
 
-// const menuButton = document.getElementById("menu-button");
-// const mobileMenu = document.getElementById("mobile-menu");
+menuButton.addEventListener("click", () => {
+  mobileMenu.classList.toggle("hidden");
+});
 
-// menuButton.addEventListener("click", () => {
-//   mobileMenu.classList.toggle("hidden");
-// });
+window.addEventListener("load", () => {
+  document.getElementById("preloader").style.display = "none";
+  document.getElementById("main").classList.remove("hidden");
+  gsap.from("main", {
+    opacity: 0,
+    duration: 1.5,
+  });
+});
 
-// window.addEventListener('load', () => {
-//   document.getElementById('preloader').style.display = 'none';
-//   document.getElementById('main').classList.remove('hidden');
-//   gsap.from('main', {
-//     opacity: 0,
-//     duration: 1.5
-//   })
-// })
+let headerText = document.getElementById("header-text");
+let textArray = [
+  "Unlock Your Digital Future",
+  "Explore Cutting-Edge Solutions",
+  "Transform Your Business",
+];
+let index = 0;
 
-// let headerText = document.getElementById("header-text");
-// let textArray = [
-//   "Unlock Your Digital Future",
-//   "Explore Cutting-Edge Solutions",
-//   "Transform Your Business",
-// ];
-// let index = 0;
+function changeHeaderText() {
+  headerText.textContent = textArray[index];
+  index = (index + 1) % textArray.length;
+}
 
-// function changeHeaderText() {
-//   headerText.textContent = textArray[index];
-//   index = (index + 1) % textArray.length;
-// }
+setInterval(changeHeaderText, 4000);
 
-// setInterval(changeHeaderText, 4000);
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-// const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollToTopBtn.style.opacity = "1";
+  } else {
+    scrollToTopBtn.style.opacity = "0";
+  }
+});
 
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 100) {
-//     scrollToTopBtn.style.opacity = "1";
-//   } else {
-//     scrollToTopBtn.style.opacity = "0";
-//   }
-// });
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 
-// scrollToTopBtn.addEventListener("click", () => {
-//   window.scrollTo({
-//     top: 0,
-//     behavior: "smooth",
-//   });
-// });
+// Swiper js for pagination
 
-// // Swiper js for pagination 
+const swiperElement = document.getElementsByTagName("swiper-container");
 
-// const swiperElement = document.getElementsByTagName('swiper-container')
-
-// var swiper = new Swiper('.swiper', {
-//   pagination : {
-//     el : '.swiper-pagination',
-//     dynamicBullets: true
-//   }
-// })
+var swiper = new Swiper(".swiper", {
+  autoplay: {
+    delay: 10000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+});

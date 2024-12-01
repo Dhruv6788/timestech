@@ -30,10 +30,14 @@
 </head>
 
 <body class="overflow-x-hidden">
+
     <div id="preloader" class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center">
         <img src="../public/loader.gif" alt="">
     </div>
+
     <main id="main" class="relative hidden">
+
+        <!-- Scroll To Top Btn -->
         <button id="scrollToTopBtn"
             class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
             <i class="ri ri-arrow-up-line"></i>
@@ -87,6 +91,7 @@
             </div>
         </nav>
 
+        <!-- Heading -->
         <div class="background w-screen relative z-[-1] bg-cover"
             style="background-color: black; height: 30vh !important;">
             <div class="w-full h-full absolute bg-black opacity-80 flex flex-col items-center justify-center">
@@ -98,7 +103,7 @@
             </div>
         </div>
 
-
+        <!-- Contact Form & Address -->
         <section id="contact" class="bg-gray-100 py-16">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-4xl font-bold text-center text-gray-900 mb-5 font-[DM]">Contact Us</h2>
@@ -181,13 +186,7 @@
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="module" src="../scripts/about.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-            document.getElementById('preloader').style.display = 'none';
-            document.getElementById('main').classList.remove('hidden');
-        })
-    </script>
+    <script type="module" src="../scripts/contact.js"></script>
 </body>
 
 </html>
