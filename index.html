@@ -1,604 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timestech | Home</title>
-    <meta
-      name="description"
-      content="Welcome to Timestech, your one-stop solution for all IT needs. Explore our services and let's transform your business together."
-    />
-    <meta
-      name="keywords"
-      content="Timestech, IT Solutions, Software Development, Cloud Services, Cybersecurity, IT Consulting"
-    />
-    <meta name="author" content="Timestech Team" />
-    <meta property="og:title" content="Timestech | Home" />
-    <meta
-      property="og:description"
-      content="Welcome to Timestech, your one-stop solution for all IT needs. Explore our services and let's transform your business together."
-    />
-    <meta property="og:image" content="./public/IT_office.webp" />
-    <meta property="og:url" content="https://www.timestech.com" />
-    <meta property="og:site_name" content="Timestech" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Timestech | Home" />
-    <meta
-      name="twitter:description"
-      content="Welcome to Timestech, your one-stop solution for all IT needs. Explore our services and let's transform your business together."
-    />
-    <meta name="twitter:image" content="./public/IT_office.webp" />
-    <link
-      rel="preload"
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      />
-    </noscript>
-    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
-    <link rel="preload" href="./public/IT_office.webp" as="image" />
-    <link rel="preload" href="./public/IT_team.webp" as="image" />
-    <link rel="stylesheet" href="./dist/output.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body class="overflow-x-hidden">
-    <!-- Preloader -->
-    <div
-      id="preloader"
-      class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center"
-    >
-      <img src="./public/loader.gif" alt="" />
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timestech | Home</title>
+  <meta name="description"
+    content="Welcome to Timestech, your one-stop solution for all IT needs. Explore our services and let's transform your business together." />
+  <meta name="keywords"
+    content="Timestech, IT Solutions, Software Development, Cloud Services, Cybersecurity, IT Consulting" />
+  <meta name="author" content="Timestech Team" />
+  <meta property="og:title" content="Timestech | Home" />
+  <meta property="og:description"
+    content="Welcome to Timestech, your one-stop solution for all IT needs. Explore our services and let's transform your business together." />
+  <meta property="og:image" content="./public/IT_office.webp" />
+  <meta property="og:url" content="https://www.timestech.com" />
+  <meta property="og:site_name" content="Timestech" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Timestech | Home" />
+  <meta name="twitter:description"
+    content="Welcome to Timestech, your one-stop solution for all IT needs. Explore our services and let's transform your business together." />
+  <meta name="twitter:image" content="./public/IT_office.webp" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" as="style"
+    onload="this.rel='stylesheet'" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+  </noscript>
+  <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon" />
+  <link rel="preload" href="./public/IT_office.webp" as="image" />
+  <link rel="preload" href="./public/IT_team.webp" as="image" />
+  <link rel="stylesheet" href="./dist/output.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- Main Section -->
-    <main id="main" class="relative hidden overflow-x-hidden font-[DM]">
-      <!-- Scrool to Top Button -->
-      <button
-        id="scrollToTopBtn"
-        class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none"
-      >
-        <i class="ri ri-arrow-up-line"></i>
-      </button>
+<body class="overflow-x-hidden">
+  <!-- Preloader -->
+  <div id="preloader" class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center">
+    <img src="./public/loader.gif" alt="" />
+  </div>
 
-      <!-- Top Navigation Bar -->
-      <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div class="flex justify-between items-center h-full">
-            <div class="w-[50%] h-full flex justify-start items-center">
-              <img
-                src="./public/logo.png"
-                alt="Timestech Logo"
-                class="w-40 h-full object-contain"
-              />
-            </div>
+  <!-- Main Section -->
+  <main id="main" class="relative hidden overflow-x-hidden font-[DM]">
+    <!-- Scrool to Top Button -->
+    <button id="scrollToTopBtn"
+      class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
+      <i class="ri ri-arrow-up-line"></i>
+    </button>
 
-            <div class="hidden md:flex space-x-10">
-              <a
-                href="/"
-                class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >Home</a
-              >
-              <a
-                href="./pages/about.html"
-                class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >About Us</a
-              >
-              <a
-                href="./pages/services.html"
-                class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >Our Services</a
-              >
-              <a
-                href="./pages/contact.html"
-                class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >Contact Us</a
-              >
-            </div>
-
-            <div class="flex md:hidden">
-              <button
-                id="menu-button"
-                class="inline-flex items-center justify-center p-2 rounded-md text-black hover:bg-[#28abe3] focus:outline-none"
-              >
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              </button>
-            </div>
+    <!-- Top Navigation Bar -->
+    <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <div class="flex justify-between items-center h-full">
+          <div class="w-[50%] h-full flex justify-start items-center">
+            <img src="./public/logo.png" alt="Timestech Logo" class="w-40 h-full object-contain" />
           </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white font-[DM]">
-            <a
-              href="/"
-              class="block px-3 py-2 uppercase rounded-md text-base active font-semibold hover:text-white hover:bg-[#28abe3]"
-              >Home</a
-            >
-            <a
-              href="./pages/about.html"
-              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
-              >About</a
-            >
-            <a
-              href="./pages/services.html"
-              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
-              >Services</a
-            >
-            <a
-              href="./pages/contact.html"
-              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
-              >Contact</a
-            >
-          </div>
-        </div>
-      </nav>
 
-      <!-- Container - Home  -->
-      <div class="background w-screen relative z-[1] h-[calc(100vh-80px)]">
-        <div class="w-full h-full absolute bg-black opacity-[.8]">
-          <div
-            class="w-full h-full absolute flex flex-col justify-center items-center opacity-[1]"
-          >
-            <h1
-              class="text-white font-[DM] font-black text-5xl w-[87%] lg:text-5xl xl:text-4xl md:text-3xl sm:text-2xl text-center"
-              id="header-text"
-            >
-              Unlock Your Digital Future
-            </h1>
-
-            <p
-              class="text-white font-[DM] text-lg lg:text-2xl lg:w-[60%] opacity-60 text-center px-10 mt-4"
-            >
-              Experience the cutting-edge technology solutions that propel your
-              business forward. Explore the limitless possibilities with
-              Timestech Softwares.
-            </p>
-            <a
-              href="./pages/about.html" target="_blank"
-              class="px-5 text-white py-4 bg-[#28abe4] mt-10 rounded-full"
-              >Discover More</a
-            >
+          <div class="hidden md:flex space-x-10">
+            <a href="/" class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300">Home</a>
+            <a href="./pages/about.html"
+              class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">About Us</a>
+            <a href="./pages/services.html"
+              class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">Our Services</a>
+            <a href="./pages/contact.html"
+              class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">Contact Us</a>
           </div>
+
+          <div class="flex md:hidden">
+            <input class="hidden" type="checkbox" name="menu" id="menu">
+            <label for="menu">
+              <i id="menu-icon" class="ri-menu-3-line mr-3 text-2xl font-medium"  id="menu-icon"></i>
+            </label>
+          </div>
+          
         </div>
       </div>
 
-      <!-- About Us Section  -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white font-[DM]">
+          <a href="/"
+            class="block px-3 py-2 uppercase rounded-md text-base active font-semibold hover:text-white hover:bg-[#28abe3]">Home</a>
+          <a href="./pages/about.html"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">About</a>
+          <a href="./pages/services.html"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">Services</a>
+          <a href="./pages/contact.html"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Container - Home  -->
+    <div class="background w-screen relative z-[1] h-[calc(100vh-80px)]">
+      <div class="w-full h-full absolute bg-black opacity-[.8]">
+        <div class="w-full h-full absolute flex flex-col justify-center items-center opacity-[1]">
+          <h1
+            class="text-white font-[DM] font-black text-5xl w-[87%] lg:text-5xl xl:text-4xl md:text-3xl sm:text-2xl text-center"
+            id="header-text">
+            Unlock Your Digital Future
+          </h1>
+
+          <p class="text-white font-[DM] text-lg lg:text-2xl lg:w-[60%] opacity-60 text-center px-10 mt-4">
+            Experience the cutting-edge technology solutions that propel your
+            business forward. Explore the limitless possibilities with
+            Timestech Softwares.
+          </p>
+          <a href="./pages/about.html" target="_blank"
+            class="px-5 text-white py-4 bg-[#28abe4] mt-10 rounded-full">Discover More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Us Section  -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <!-- About Us - Heading -->
+      <div class="flex flex-col items-center">
+        <h2 class="lg:text-3xl text-2xl text-center font-bold font-[DM] text-black">
+          We Are Timestech Softwares
+        </h2>
+        <p class="text-center font-light mt-3 opacity-75 tracking-wide text-lg lg:text-xl">
+          Welcome to Timestech Softwares, where innovation meets excellence.
+        </p>
+        <div class="w-20 h-1 bg-[#28abe3] mt-3"></div>
+      </div>
+
+      <!-- Defined Timestech -->
+      <div class="w-full mt-10">
+        <img src="./public/IT_team.webp" alt="office Image" />
+        <p class="w-full text-center text-md italic font-light lg:text-2xl lg:mt-5 opacity-75 mt-4">
+          "At Timestech Softwares, we specialize in delivering a diversified
+          portfolio of IT solutions, including Software Development, Cloud
+          Services, Cybersecurity, and IT Consulting. Our extensive network of
+          experts empowers our teams across the U.A.E, Middle East, and U.S.
+          markets."
+        </p>
+      </div>
+
+      <!-- Key Services -->
       <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <!-- About Us - Heading -->
+        <!-- Services - Heading -->
         <div class="flex flex-col items-center">
-          <h2
-            class="lg:text-3xl text-2xl text-center font-bold font-[DM] text-black"
-          >
-            We Are Timestech Softwares
+          <h2 class="text-3xl lg:text-4xl font-black font-[DM] text-black">
+            Our Services
           </h2>
-          <p
-            class="text-center font-light mt-3 opacity-75 tracking-wide text-lg lg:text-xl"
-          >
-            Welcome to Timestech Softwares, where innovation meets excellence.
+          <p class="text-center font-light mt-3 opacity-75 tracking-wide text-md lg:text-xl">
+            Explore our comprehensive range of services, designed to propel
+            your business forward with the latest technology advancements.
           </p>
-          <div class="w-20 h-1 bg-[#28abe3] mt-3"></div>
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
         </div>
-
-        <!-- Defined Timestech -->
-        <div class="w-full mt-10">
-          <img src="./public/IT_team.webp" alt="office Image" />
-          <p
-            class="w-full text-center text-md italic font-light lg:text-2xl lg:mt-5 opacity-75 mt-4"
-          >
-            "At Timestech Softwares, we specialize in delivering a diversified
-            portfolio of IT solutions, including Software Development, Cloud
-            Services, Cybersecurity, and IT Consulting. Our extensive network of
-            experts empowers our teams across the U.A.E, Middle East, and U.S.
-            markets."
-          </p>
-        </div>
-
-        <!-- Key Services -->
-        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <!-- Services - Heading -->
-          <div class="flex flex-col items-center">
-            <h2 class="text-3xl lg:text-4xl font-black font-[DM] text-black">
-              Our Services
-            </h2>
-            <p
-              class="text-center font-light mt-3 opacity-75 tracking-wide text-md lg:text-xl"
-            >
-              Explore our comprehensive range of services, designed to propel
-              your business forward with the latest technology advancements.
+        <!-- Services - Description -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl">
+              Web Development
+            </h3>
+            <p class="text-black font-medium opacity-80 text-center mt-4 text-md lg:text-lg">
+              Transform your business with our cutting-edge web development
+              solutions, offering unparalleled performance, scalability, and
+              user experience.
             </p>
-            <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
           </div>
-          <!-- Services - Description -->
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-10">
-            <div class="bg-[#28abe3] p-5 rounded-lg">
-              <div class="flex justify-center items-center">
-                <i class="fas fa-laptop-code text-white text-4xl"></i>
-              </div>
-              <h3
-                class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl"
-              >
-                Web Development
-              </h3>
-              <p
-                class="text-black font-medium opacity-80 text-center mt-4 text-md lg:text-lg"
-              >
-                Transform your business with our cutting-edge web development
-                solutions, offering unparalleled performance, scalability, and
-                user experience.
-              </p>
-            </div>
 
-            <div class="bg-[#28abe3] p-5 rounded-lg">
-              <div class="flex justify-center items-center">
-                <i class="fas fa-laptop-code text-white text-4xl"></i>
-              </div>
-              <h3
-                class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl"
-              >
-                App Development
-              </h3>
-              <p
-                class="text-black opacity-80 font-medium text-center mt-4 text-md lg:text-lg"
-              >
-                From conceptualization to deployment, our app development
-                services provide a seamless experience with cutting-edge
-                technology, innovative design, and unparalleled performance.
-              </p>
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
             </div>
-
-            <div class="bg-[#28abe3] p-5 rounded-lg">
-              <div class="flex justify-center items-center">
-                <i class="fas fa-laptop-code text-white text-4xl"></i>
-              </div>
-              <h3
-                class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl"
-              >
-                Logo Design
-              </h3>
-              <p
-                class="text-black text-center font-medium mt-4 opacity-80 text-md lg:text-lg"
-              >
-                Create a lasting impression with our custom logo design
-                services. From concept to completion, our expert designers will
-                craft a unique visual identity that accurately represents your
-                brand values and resonates with your target audience.
-              </p>
-            </div>
-
-            <div class="bg-[#28abe3] p-5 rounded-lg">
-              <div class="flex justify-center items-center">
-                <i class="fas fa-laptop-code text-white text-4xl"></i>
-              </div>
-              <h3
-                class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl"
-              >
-                Banner Design
-              </h3>
-              <p
-                class="text-black font-medium opacity-80 mb-4 text-center mt-4 text-md lg:text-lg"
-              >
-                Elevate your brand's visibility and impact with our expert
-                banner design services. From conceptualization to delivery, our
-                designers craft stunning visuals that captivate audiences, drive
-                engagement, and leave a lasting impression.
-              </p>
-            </div>
-
-            <div class="bg-[#28abe3] p-5 rounded-lg">
-              <div class="flex justify-center items-center">
-                <i class="fas fa-laptop-code text-white text-4xl"></i>
-              </div>
-              <h3
-                class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl"
-              >
-                IT Consultancy
-              </h3>
-              <p
-                class="text-black font-medium mb-4 opacity-80 text-center mt-4 text-md lg:text-lg"
-              >
-                Empower your business with our expert IT consultancy services,
-                designed to optimize your technology infrastructure, streamline
-                operations, and drive growth through strategic guidance and
-                innovative solutions.
-              </p>
-            </div>
-
-            <div class="bg-[#28abe3] p-5 rounded-lg">
-              <div class="flex justify-center items-center">
-                <i class="fas fa-laptop-code text-white text-4xl"></i>
-              </div>
-              <h3 class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl">
-                Web Hosting
-              </h3>
-              <p
-                class="text-black font-medium opacity-80 mb-4 text-center mt-4 text-md lg:text-lg"
-              >
-                Experience lightning-fast load times, reliable uptime, and
-                unparalleled security with our premium web hosting services,
-                designed to take your online presence to the next level.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- Testimonials Using Swiper js -->
-        <section class="bg-gray-100 py-16">
-          <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col"
-          >
-            <h2
-              class="text-3xl lg:text-4xl font-extrabold text-gray-900 text-center mb-4 font-[DM]"
-            >
-              What Our Clients Says
-            </h2>
-            <p
-              class="text-gray-600 text-center lg:text-2xl opacity-75 font-[DM] text-lg"
-            >
-              Hear from our satisfied customers about their experience with
-              Timestech
+            <h3 class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl">
+              App Development
+            </h3>
+            <p class="text-black opacity-80 font-medium text-center mt-4 text-md lg:text-lg">
+              From conceptualization to deployment, our app development
+              services provide a seamless experience with cutting-edge
+              technology, innovative design, and unparalleled performance.
             </p>
-            <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
           </div>
-        </section>
 
-        <div class="swiper w-full select-none font-[DM] bg-[#28abe3]">
-          <div class="swiper-wrapper w-full">
-            <!-- Feedback 1 -->
-            <div
-              class="swiper-slide w-full text-white flex justify-center flex-col items-center px-5 py-16"
-            >
-              <i class="ri-chat-4-fill text-black text-5xl"></i>
-              <h4
-                class="font-medium text-lg lg:text-2xl mt-10 text-black text-center lg:w-[70%]"
-              >
-                We are very happy with Timestech Softwares for creating the
-                website for our company - Futuristic Trade DMCC. The design is
-                sleek and professional, perfectly reflecting our brand.
-                Navigation is very user friendly, making it easy for everyone to
-                access important information and resources.
-              </h4>
-
-              <div
-                class="w-full flex flex-col justify-center items-center py-4"
-              >
-                <h1 class="mt-5 text-3xl font-bold text-center">
-                  Mohammed Abdul Salam
-                </h1>
-                <h1 class="text-lg text-center">
-                  Operations Manager - Futuristic Trade DMCC
-                </h1>
-                <a
-                  href="https://www.futuristictradedmcc.com/" target="_blank"
-                  class="bg-black text-[#28abe3] px-4 py-2 mt-5 rounded-full"
-                  >Visit Site <i class="ri-arrow-right-up-line"></i
-                ></a>
-              </div>
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
             </div>
-
-            <!-- Feedback 2 -->
-            <div
-              class="swiper-slide w-full bg-[#28abe3] text-white flex-col flex justify-center items-center px-5 py-16"
-            >
-              <i class="ri-chat-4-fill text-black text-5xl"></i>
-              <h4
-                class="font-medium text-lg text-black mt-10 lg:text-2xl text-center lg:w-[70%]"
-              >
-                We are absolutely thrilled with our new website for our gold
-                trading company - TradeHouse Gold & General Trading LLC! The
-                black and gold color scheme exudes sophistication and elegance,
-                perfectly capturing the essence of our brand. The layout is very
-                user friendly as well.
-              </h4>
-
-              <div
-                class="w-full flex flex-col justify-center items-center py-4"
-              >
-                <h1 class="mt-5 text-3xl font-bold text-center">
-                  Nirav Bhatt
-                </h1>
-                <h1 class="text-lg text-center">
-                  Head of Operations - TradeHouse Gold & General Trading LLC
-                </h1>
-                <a
-                  href="https://www.tradehousegold.com/" target="_blank"
-                  class="bg-black text-[#28abe3] px-4 mt-5 py-2 rounded-full"
-                  >Visit Site <i class="ri-arrow-right-up-line"></i
-                ></a>
-              </div>
-            </div>
-
-            <!-- Feedback 3 -->
-            <div
-              class="swiper-slide w-full bg-[#28abe3] text-white flex flex-col justify-center items-center px-5 py-16"
-            >
-              <i class="ri-chat-4-fill text-black text-5xl"></i>
-              <h4
-                class="font-medium text-lg text-black lg:text-2xl mt-10 text-center lg:w-[70%]"
-              >
-                I highly recommend this business. Their customer service is
-                second to none. The product quality is consistently outstanding,
-                exceeding my expectations every time. I was completely impressed
-                with their professionalism and customer service
-              </h4>
-
-              <div
-                class="w-full flex flex-col justify-center items-center py-4"
-              >
-                <h1 class="mt-5 text-3xl font-bold text-center">
-                  Harsh Jadhav
-                </h1>
-                <h1 class="text-lg text-center">
-                  Director - Camburg Engineering
-                </h1>
-                <a
-                  href="https://camburg-engineering.com/" target="_blank"
-                  class="bg-black text-[#28abe3] px-4 mt-5 py-2 rounded-full"
-                  >Visit Site <i class="ri-arrow-right-up-line"></i
-                ></a>
-              </div>
-            </div>
-
+            <h3 class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl">
+              Logo Design
+            </h3>
+            <p class="text-black text-center font-medium mt-4 opacity-80 text-md lg:text-lg">
+              Create a lasting impression with our custom logo design
+              services. From concept to completion, our expert designers will
+              craft a unique visual identity that accurately represents your
+              brand values and resonates with your target audience.
+            </p>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </section>
 
-      <!-- Contact Us -->
-      <section id="contact" class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="text-4xl font-black text-center text-gray-900 mb-4 font-[DM]"
-          >
-            Contact Us
-          </h2>
-          <p class="text-gray-600 text-center font-[DM] text-2xl opacity-75">
-            Let's make something together
-          </p>
-          <div class="w-20 h-1 bg-[#28abe3] mx-auto mt-4"></div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-semibold mb-4 font-[DM]">Get in Touch</h3>
-              <form action="https://formspree.io/f/manywpeq" method="POST">
-                <div class="mb-4">
-                  <label for="name" class="block text-gray-700 font-[DM] mb-2"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                    required
-                  />
-                </div>
-                <div class="mb-4">
-                  <label for="email" class="block text-gray-700 font-[DM] mb-2"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                    required
-                  />
-                </div>
-                <div class="mb-4">
-                  <label
-                    for="message"
-                    class="block text-gray-700 font-[DM] mb-2"
-                    >Message</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  class="bg-[#28abe3] text-white font-[DM] py-2 px-4 rounded-md hover:bg-[#1c8ab3] transition duration-300"
-                >
-                  Send Message
-                </button>
-              </form>
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
             </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-semibold mb-4 font-[DM]">
-                Contact Information
-              </h3>
-              <ul class="space-y-4">
-                <li
-                  class="flex items-center cursor-pointer hover:bg-gray-100 transition duration-300 ease-in-out"
-                >
-                  <i class="ri-map-pin-line text-[#28abe3] text-xl mr-3"></i>
-                  <span class="font-[DM] text-lg"
-                    >Shree Raj Residency, Sisva-Valvod Rd, Sisva, Gujarat
-                    388530</span
-                  >
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-phone-line text-[#28abe3] text-xl mr-3"></i>
-                  <span class="font-[DM] text-lg">+91 70411 93995</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-mail-line text-[#28abe3] text-xl mr-3"></i>
-                  <span class="font-[DM] text-lg"
-                    >timestechsoftwares@gmail.com</span
-                  >
-                </li>
-              </ul>
-              <div class="mt-6 flex justify-center flex-col items-center">
-                <h4 class="text-lg font-semibold mb-2 mt-4 font-[DM]">
-                  Follow Us
-                </h4>
-                <div class="flex space-x-4">
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-facebook-fill text-2xl"></i
-                  ></a>
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-twitter-fill text-2xl"></i
-                  ></a>
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-linkedin-fill text-2xl"></i
-                  ></a>
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-instagram-fill text-2xl"></i
-                  ></a>
-                </div>
-              </div>
+            <h3 class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl">
+              Banner Design
+            </h3>
+            <p class="text-black font-medium opacity-80 mb-4 text-center mt-4 text-md lg:text-lg">
+              Elevate your brand's visibility and impact with our expert
+              banner design services. From conceptualization to delivery, our
+              designers craft stunning visuals that captivate audiences, drive
+              engagement, and leave a lasting impression.
+            </p>
+          </div>
+
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
             </div>
+            <h3 class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl">
+              IT Consultancy
+            </h3>
+            <p class="text-black font-medium mb-4 opacity-80 text-center mt-4 text-md lg:text-lg">
+              Empower your business with our expert IT consultancy services,
+              designed to optimize your technology infrastructure, streamline
+              operations, and drive growth through strategic guidance and
+              innovative solutions.
+            </p>
+          </div>
+
+          <div class="bg-[#28abe3] p-5 rounded-lg">
+            <div class="flex justify-center items-center">
+              <i class="fas fa-laptop-code text-white text-4xl"></i>
+            </div>
+            <h3 class="text-black font-black font-[DM] text-center mt-4 text-xl lg:text-2xl">
+              Web Hosting
+            </h3>
+            <p class="text-black font-medium opacity-80 mb-4 text-center mt-4 text-md lg:text-lg">
+              Experience lightning-fast load times, reliable uptime, and
+              unparalleled security with our premium web hosting services,
+              designed to take your online presence to the next level.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Footer Section -->
-      <footer class="bg-gray-800 text-white py-6">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row justify-center items-center">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-              <p>
-                &copy; Copyright 2024. All Rights Reserved to Timestech
-                Softwares | Design and Developed by
-                <a href="/timestech" class="text-[#28abe4]">Timestech Team</a>
-              </p>
+      <!-- Testimonials Using Swiper js -->
+      <section class="bg-gray-100 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center flex-col">
+          <h2 class="text-3xl lg:text-4xl font-extrabold text-gray-900 text-center mb-4 font-[DM]">
+            What Our Clients Says
+          </h2>
+          <p class="text-gray-600 text-center lg:text-2xl opacity-75 font-[DM] text-lg">
+            Hear from our satisfied customers about their experience with
+            Timestech
+          </p>
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+        </div>
+      </section>
+
+      <div class="swiper w-full select-none font-[DM] bg-[#28abe3]">
+        <div class="swiper-wrapper w-full">
+          <!-- Feedback 1 -->
+          <div class="swiper-slide w-full text-white flex justify-center flex-col items-center px-5 py-16">
+            <i class="ri-chat-4-fill text-black text-5xl"></i>
+            <h4 class="font-medium text-lg lg:text-2xl mt-10 text-black text-center lg:w-[70%]">
+              We are very happy with Timestech Softwares for creating the
+              website for our company - Futuristic Trade DMCC. The design is
+              sleek and professional, perfectly reflecting our brand.
+              Navigation is very user friendly, making it easy for everyone to
+              access important information and resources.
+            </h4>
+
+            <div class="w-full flex flex-col justify-center items-center py-4">
+              <h1 class="mt-5 text-3xl font-bold text-center">
+                Mohammed Abdul Salam
+              </h1>
+              <h1 class="text-lg text-center">
+                Operations Manager - Futuristic Trade DMCC
+              </h1>
+              <a href="https://www.futuristictradedmcc.com/" target="_blank"
+                class="bg-black text-[#28abe3] px-4 py-2 mt-5 rounded-full">Visit Site <i
+                  class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+
+          <!-- Feedback 2 -->
+          <div class="swiper-slide w-full bg-[#28abe3] text-white flex-col flex justify-center items-center px-5 py-16">
+            <i class="ri-chat-4-fill text-black text-5xl"></i>
+            <h4 class="font-medium text-lg text-black mt-10 lg:text-2xl text-center lg:w-[70%]">
+              We are absolutely thrilled with our new website for our gold
+              trading company - TradeHouse Gold & General Trading LLC! The
+              black and gold color scheme exudes sophistication and elegance,
+              perfectly capturing the essence of our brand. The layout is very
+              user friendly as well.
+            </h4>
+
+            <div class="w-full flex flex-col justify-center items-center py-4">
+              <h1 class="mt-5 text-3xl font-bold text-center">
+                Nirav Bhatt
+              </h1>
+              <h1 class="text-lg text-center">
+                Head of Operations - TradeHouse Gold & General Trading LLC
+              </h1>
+              <a href="https://www.tradehousegold.com/" target="_blank"
+                class="bg-black text-[#28abe3] px-4 mt-5 py-2 rounded-full">Visit Site <i
+                  class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+
+          <!-- Feedback 3 -->
+          <div class="swiper-slide w-full bg-[#28abe3] text-white flex flex-col justify-center items-center px-5 py-16">
+            <i class="ri-chat-4-fill text-black text-5xl"></i>
+            <h4 class="font-medium text-lg text-black lg:text-2xl mt-10 text-center lg:w-[70%]">
+              I highly recommend this business. Their customer service is
+              second to none. The product quality is consistently outstanding,
+              exceeding my expectations every time. I was completely impressed
+              with their professionalism and customer service
+            </h4>
+
+            <div class="w-full flex flex-col justify-center items-center py-4">
+              <h1 class="mt-5 text-3xl font-bold text-center">
+                Harsh Jadhav
+              </h1>
+              <h1 class="text-lg text-center">
+                Director - Camburg Engineering
+              </h1>
+              <a href="https://camburg-engineering.com/" target="_blank"
+                class="bg-black text-[#28abe3] px-4 mt-5 py-2 rounded-full">Visit Site <i
+                  class="ri-arrow-right-up-line"></i></a>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-black text-center text-gray-900 mb-4 font-[DM]">
+          Contact Us
+        </h2>
+        <p class="text-gray-600 text-center font-[DM] text-2xl opacity-75">
+          Let's make something together
+        </p>
+        <div class="w-20 h-1 bg-[#28abe3] mx-auto mt-4"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[DM]">Get in Touch</h3>
+            <form action="https://formspree.io/f/manywpeq" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-[DM] mb-2">Name</label>
+                <input type="text" id="name" name="name"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-[DM] mb-2">Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-[DM] mb-2">Message</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required></textarea>
+              </div>
+              <button type="submit"
+                class="bg-[#28abe3] text-white font-[DM] py-2 px-4 rounded-md hover:bg-[#1c8ab3] transition duration-300">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[DM]">
+              Contact Information
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-center cursor-pointer transition duration-300 ease-in-out">
+                <i class="ri-map-pin-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[DM] text-lg text-[#28abe3]"><a target="_blank"
+                    href="https://maps.app.goo.gl/KVQyZbJmHfDh4j627" target="_blank">Shree Raj Residency, Sisva-Valvod
+                    Rd, Sisva, Gujarat
+                    388530</a></span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-phone-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[DM] text-lg"><a href="https://wa.link/zj9aig" class="text-[#28abe3]">+91 70411
+                    93995</a></span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-mail-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[DM] text-lg"><a href="mailto:contact@timestechsoftwares.com"
+                    class="text-[#28abe3]">contact@timestechsoftwares.com</a></span>
+              </li>
+            </ul>
+            <div class="mt-6 flex justify-center flex-col items-center">
+              <h4 class="text-lg font-semibold mb-2 mt-4 font-[DM]">
+                Follow Us
+              </h4>
+              <div class="flex space-x-4">
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-facebook-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-twitter-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-linkedin-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-instagram-fill text-2xl"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </footer>
-    </main>
+      </div>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script type="module" src="main.js"></script>
-  </body>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p>
+              &copy; Copyright 2024. All Rights Reserved to Timestech
+              Softwares | Design and Developed by
+              <a href="/timestech" class="text-[#28abe4]">Timestech Team</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="main.js"></script>
+</body>
 
 </html>

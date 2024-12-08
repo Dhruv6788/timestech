@@ -1,654 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timestech | Our Services</title>
-    <meta
-      name="description"
-      content="Explore the comprehensive range of IT services offered by Timestech, a leading technology solutions provider."
-    />
-    <meta
-      name="keywords"
-      content="Timestech, IT Services, Technology Solutions, Software Development, Cybersecurity, Cloud Computing"
-    />
-    <meta name="author" content="Timestech Team" />
-    <meta property="og:title" content="Timestech | Our Services" />
-    <meta
-      property="og:description"
-      content="Explore the comprehensive range of IT services offered by Timestech, a leading technology solutions provider."
-    />
-    <meta property="og:image" content="../public/timestech_services.jpg" />
-    <meta
-      property="og:url"
-      content="https://www.timestech.com/pages/services.html"
-    />
-    <meta property="og:site_name" content="Timestech" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Timestech | Our Services" />
-    <meta
-      name="twitter:description"
-      content="Explore the comprehensive range of IT services offered by Timestech, a leading technology solutions provider."
-    />
-    <meta name="twitter:image" content="../public/timestech_services.jpg" />
-    <link
-      rel="preload"
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      />
-    </noscript>
-    <link rel="preload" href="../public/IT_office.webp" as="image" />
-    <link rel="stylesheet" href="../dist/output.css" />
-    <link rel="stylesheet" href="../style.css" />
-  </head>
 
-  <body class="overflow-x-hidden">
-    <div
-      id="preloader"
-      class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center"
-    >
-      <img src="../public/loader.gif" alt="" />
-    </div>
-    <main id="main" class="relative hidden">
-      <!-- Scrool to Top Button -->
-      <button
-        id="scrollToTopBtn"
-        class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none"
-      >
-        <i class="ri ri-arrow-up-line"></i>
-      </button>
-      <!-- Top Navigation Bar -->
-      <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
-          <div class="flex justify-between items-center h-full">
-            <div class="w-[50%] h-full flex justify-start items-center">
-              <img
-                src="../public/logo.png"
-                alt="Timestech Logo"
-                class="w-40 h-full object-contain"
-              />
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timestech | Our Services</title>
+  <meta name="description"
+    content="Explore the comprehensive range of IT services offered by Timestech, a leading technology solutions provider." />
+  <meta name="keywords"
+    content="Timestech, IT Services, Technology Solutions, Software Development, Cybersecurity, Cloud Computing" />
+  <meta name="author" content="Timestech Team" />
+  <meta property="og:title" content="Timestech | Our Services" />
+  <meta property="og:description"
+    content="Explore the comprehensive range of IT services offered by Timestech, a leading technology solutions provider." />
+  <meta property="og:image" content="../public/timestech_services.jpg" />
+  <meta property="og:url" content="https://www.timestech.com/pages/services.html" />
+  <meta property="og:site_name" content="Timestech" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Timestech | Our Services" />
+  <meta name="twitter:description"
+    content="Explore the comprehensive range of IT services offered by Timestech, a leading technology solutions provider." />
+  <meta name="twitter:image" content="../public/timestech_services.jpg" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" as="style"
+    onload="this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" />
+  </noscript>
+  <link rel="preload" href="../public/IT_office.webp" as="image" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
 
-            <div class="hidden md:flex space-x-10">
-              <a
-                href="/"
-                class="uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >Home</a
-              >
-              <a
-                href="./about.html"
-                class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >About Us</a
-              >
-              <a
-                href="./services.html"
-                class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >Our Services</a
-              >
-              <a
-                href="./contact.html"
-                class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300"
-                >Contact Us</a
-              >
-            </div>
-
-            <div class="flex md:hidden">
-              <button
-                id="menu-button"
-                class="inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-none"
-              >
-                <svg
-                  class="h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h16m-7 6h7"
-                  />
-                </svg>
-              </button>
-            </div>
+<body class="overflow-x-hidden">
+  <div id="preloader" class="bg-white top-0 left-0 z-[30] w-screen h-screen flex justify-center items-center">
+    <img src="../public/loader.gif" alt="" />
+  </div>
+  <main id="main" class="relative hidden">
+    <!-- Scrool to Top Button -->
+    <button id="scrollToTopBtn"
+      class="fixed bottom-8 right-8 bg-[#28abe3] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 hover:bg-[#1c8abf] focus:outline-none">
+      <i class="ri ri-arrow-up-line"></i>
+    </button>
+    <!-- Top Navigation Bar -->
+    <nav class="w-screen z-[4] sticky h-20 left-0 top-0 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <div class="flex justify-between items-center h-full">
+          <div class="w-[50%] h-full flex justify-start items-center">
+            <img src="../public/logo.png" alt="Timestech Logo" class="w-40 h-full object-contain" />
           </div>
-        </div>
 
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white font-[DM]">
-            <a
-              href="/"
-              class="text-black block px-3 py-2 uppercase rounded-md text-base active font-semibold hover:bg-[#28abe3]"
-              >Home</a
-            >
-            <a
-              href="./about.html"
-              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
-              >About</a
-            >
-            <a
-              href="./services.html"
-              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:text-white hover:bg-[#28abe3]"
-              >Services</a
-            >
-            <a
-              href="./contact.html"
-              class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]"
-              >Contact</a
-            >
+          <div class="hidden md:flex space-x-10">
+            <a href="/" class="uppercase text-lg font-light font-[DM] hover:text-blue-300">Home</a>
+            <a href="./about.html" class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">About
+              Us</a>
+            <a href="./services.html"
+              class="text-[#28abe3] uppercase text-lg font-light font-[DM] hover:text-blue-300">Our Services</a>
+            <a href="./contact.html"
+              class="text-black uppercase text-lg font-light font-[DM] hover:text-blue-300">Contact Us</a>
           </div>
-        </div>
-      </nav>
-      <div
-        class="background w-screen relative z-[-1] bg-cover"
-        style="background-color: black; height: 30vh !important"
-      >
-        <div
-          class="w-full h-full absolute bg-black opacity-80 flex flex-col items-center justify-center"
-        >
-          <h1 class="text-white text-3xl font-bold font-[DM]">Our Services</h1>
-          <h1 class="text-white font-[DM] font-medium mt-4 opacity-80">
-            Home <span class="font-extralight opacity-80">/</span> Our Services
-          </h1>
+
+          <div class="flex md:hidden">
+            <input class="hidden" type="checkbox" name="menu" id="menu">
+            <label for="menu">
+              <i id="menu-icon" class="ri-menu-3-line mr-3 text-2xl font-medium"  id="menu-icon"></i>
+            </label>
+          </div>
+          
         </div>
       </div>
-      <section class="services-section py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col items-center mb-12">
-            <h2 class="text-3xl text-center font-bold font-[DM] text-black">
-              Explore Our Services
-            </h2>
-            <p
-              class="text-center text-black opacity-75 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg font-light  mx-auto"
-            >
-              At Timestech Softwares, we specialize in crafting innovative
-              mobile applications that meet the unique needs of your business.
-              Our team of expert developers leverages the latest technologies to
-              design, develop, and deploy scalable, secure, and user-friendly
-              apps that drive engagement and revenue.
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white font-[DM]">
+          <a href="/"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base  font-semibold hover:bg-[#28abe3]">Home</a>
+          <a href="./about.html"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">About</a>
+          <a href="./services.html"
+            class=" block active px-3 py-2 uppercase rounded-md text-base font-semibold hover:text-white hover:bg-[#28abe3]">Services</a>
+          <a href="./contact.html"
+            class="text-black block px-3 py-2 uppercase rounded-md text-base font-semibold hover:bg-[#28abe3]">Contact</a>
+        </div>
+      </div>
+
+    </nav>
+    <div class="background w-screen relative z-[-1] bg-cover" style="background-color: black; height: 30vh !important">
+      <div class="w-full h-full absolute bg-black opacity-80 flex flex-col items-center justify-center">
+        <h1 class="text-white text-3xl font-bold font-[DM]">Our Services</h1>
+        <h1 class="text-white font-[DM] font-medium mt-4 opacity-80">
+          Home <span class="font-extralight opacity-80">/</span> Our Services
+        </h1>
+      </div>
+    </div>
+
+    <section class="services-section py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12">
+          <h2 class="text-3xl text-center font-bold font-[DM] text-black">
+            Explore Our Services
+          </h2>
+          <p
+            class="text-center text-black opacity-75 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg font-light  mx-auto">
+            At Timestech Softwares, we specialize in crafting innovative
+            mobile applications that meet the unique needs of your business.
+            Our team of expert developers leverages the latest technologies to
+            design, develop, and deploy scalable, secure, and user-friendly
+            apps that drive engagement and revenue.
+          </p>
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+          <div
+            class="service-item flex bg-white items-center justify-center flex-col rounded-lg border-2 border-gray-200 shadow-sm shadow-gray-300 px-3 py-5">
+            <img src="../public/laptop.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Software Development
+            </h3>
+            <p class="text-gray-700 text-lg font-medium text-center">
+              We design and develop custom software solutions tailored to meet
+              your business needs.
             </p>
-            <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+          </div>
+          <div
+            class="service-item flex items-center justify-center bg-white flex-col rounded-lg border-2 border-gray-200 shadow-sm shadow-gray-300 px-3 py-5">
+            <img src="../public/cloud-network.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Cloud Services
+            </h3>
+            <p class="text-gray-700 text-lg text-center font-medium">
+              Migrate your business to the cloud and experience scalability,
+              flexibility, and cost savings.
+            </p>
           </div>
 
           <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center"
-          >
-            <div
-              class="service-item flex bg-white items-center justify-center flex-col rounded-lg border-2 border-gray-200 shadow-sm shadow-gray-300 px-3 py-5"
-            >
-              <img src="../public/laptop.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Software Development
-              </h3>
-              <p class="text-gray-700 text-lg font-medium text-center">
-                We design and develop custom software solutions tailored to meet
-                your business needs.
-              </p>
-            </div>
-            <div
-              class="service-item flex items-center justify-center bg-white flex-col rounded-lg border-2 border-gray-200 shadow-sm shadow-gray-300 px-3 py-5"
-            >
-              <img src="../public/cloud-network.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Cloud Services
-              </h3>
-              <p class="text-gray-700 text-lg text-center font-medium">
-                Migrate your business to the cloud and experience scalability,
-                flexibility, and cost savings.
-              </p>
-            </div>
-
-            <div
-              class="service-item flex items-center justify-center bg-white flex-col flex-colrounded-lg border-2 border-gray-200 shadow-sm shadow-gray-300 px-3 py-5"
-            >
-              <img src="../public/cyber-security.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                IT Consulting
-              </h3>
-              <p class="text-gray-700 text-lg text-center font-medium">
-                Get expert advice on IT strategy, infrastructure, and operations
-                to drive business growth.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Web Developement -->
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col items-center mb-12">
-            <h2
-              class="text-3xl text-center font-bold px-4 font-[DM] text-black"
-            >
-              Web Development
-            </h2>
-            <p
-              class="px-4 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg lg:text-center text-justify font-light mx-auto"
-            >
-              We craft innovative web applications that meet your business
-              needs, using the latest technologies to ensure scalability,
-              security, and usability.
+            class="service-item flex items-center justify-center bg-white flex-col flex-colrounded-lg border-2 border-gray-200 shadow-sm shadow-gray-300 px-3 py-5">
+            <img src="../public/cyber-security.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              IT Consulting
+            </h3>
+            <p class="text-gray-700 text-lg text-center font-medium">
+              Get expert advice on IT strategy, infrastructure, and operations
+              to drive business growth.
             </p>
-
-            <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-code-s-slash-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/webdev.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Custom Web Applications
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                We build scalable and robust web applications tailored to your
-                business needs.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-responsive-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/responsive.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Responsive Design
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Our designs ensure a seamless experience across all devices and
-                screen sizes.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-speed-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/performance.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Performance Optimization
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                We optimize your website to achieve fast load times and smooth
-                performance.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-lock-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/folder.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Secure Development
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Our security-first approach protects your website from potential
-                threats.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-line-chart-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/seo.gif" class="w-20" alt="" />
-
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                SEO Optimization
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Boost your website's visibility with our effective SEO
-                strategies.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-user-heart-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/web-d.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                User Experience Design
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                We design intuitive and engaging interfaces for a superior user
-                experience.
-              </p>
-            </div>
           </div>
         </div>
-      </section>
-      <!-- App Developement -->
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col items-center mb-12">
-            <h2
-              class="text-3xl px-4 text-center font-bold font-[DM] text-black"
-            >
-              App Development
-            </h2>
-            <p
-              class="text-justify lg:text-center px-4 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg font-light mx-auto"
-            >
-              We craft innovative mobile apps that meet your business needs,
-              using the latest technologies to deliver scalable, secure, and
-              user-friendly solutions that drive engagement and revenue.
-            </p>
-
-            <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-code-s-slash-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/webdev.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Custom App Design
-              </h3>
-              <p class="text-gray-700 text-center w-full text-lg">
-                We build scalable and robust web applications tailored to your
-                business needs.
-              </p>
-            </div>
-
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-responsive-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/responsive.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Native App Development
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Our designs ensure a seamless experience across all devices and
-                screen sizes.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-speed-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/performance.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Cross-Platform App Development
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                We optimize your website to achieve fast load times and smooth
-                performance.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-user-heart-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/web-d.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                User Experience Design
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                We design intuitive and engaging interfaces for a superior user
-                experience.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-lock-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/folder.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Testing and Quality Assurance
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Our security-first approach protects your website from potential
-                threats.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-line-chart-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/seo.gif" class="w-20" alt="" />
-
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Deployment and Maintenance
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Boost your website's visibility with our effective SEO
-                strategies.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Logo & Banner Design -->
-      <section class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col items-center mb-12">
-            <h2 class="text-3xl text-center font-bold font-[DM] text-black">
-              Logo & Banner Design
-            </h2>
-            <p
-              class="text-justify g:text-center px-4 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg font-light mx-auto"
-            >
-              We craft innovative mobile applications that meet your business
-              needs, using the latest technologies to deliver scalable, secure,
-              and user-friendly apps that drive engagement and revenue.
-            </p>
-
-            <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-code-s-slash-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/webdev.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Custom Logo Design
-              </h3>
-              <p class="text-gray-700 w-full text-center text-lg">
-                We build scalable and robust web applications tailored to your
-                business needs.
-              </p>
-            </div>
-
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-responsive-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/responsive.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Banner Design for Web and Print
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Our designs ensure a seamless experience across all devices and
-                screen sizes.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-speed-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/performance.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Brand Guidelines Development
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                We optimize your website to achieve fast load times and smooth
-                performance.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-user-heart-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/web-d.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">Icon Design</h3>
-              <p class="text-gray-700 text-center text-lg">
-                We design intuitive and engaging interfaces for a superior user
-                experience.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-lock-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/folder.gif" class="w-20" alt="" />
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Typography and Color Palette Selection
-              </h3>
-              <p class="text-gray-700 text-center text-lg">
-                Our security-first approach protects your website from potential
-                threats.
-              </p>
-            </div>
-            <div
-              class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300"
-            >
-              <!-- <i class="ri-line-chart-line text-4xl text-[#28abe3] mb-4"></i> -->
-              <img src="../public/seo.gif" class="w-20" alt="" />
-
-              <h3 class="text-xl font-semibold mb-2 font-[DM]">
-                Deployment and Maintenance
-              </h3>
-              <p class="text-gray-700 text-lg text-center">
-                Boost your website's visibility with our effective SEO
-                strategies.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Contact Us Form -->
-      <section id="contact" class="bg-gray-100 py-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            class="text-4xl font-bold text-center text-gray-900 mb-8 font-[DM]"
-          >
-            Contact Us
+      </div>
+    </section>
+    <!-- Web Developement -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12">
+          <h2 class="text-3xl text-center font-bold px-4 font-[DM] text-black">
+            Web Development
           </h2>
-          <div class="w-20 h-1 bg-[#28abe3] mx-auto"></div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-semibold mb-4 font-[DM]">Get in Touch</h3>
-              <form action="https://formspree.io/f/manywpeq" method="POST">
-                <div class="mb-4">
-                  <label for="name" class="block text-gray-700 font-[DM] mb-2"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                    required
-                  />
-                </div>
-                <div class="mb-4">
-                  <label for="email" class="block text-gray-700 font-[DM] mb-2"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                    required
-                  />
-                </div>
-                <div class="mb-4">
-                  <label
-                    for="message"
-                    class="block text-gray-700 font-[DM] mb-2"
-                    >Message</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  class="bg-[#28abe3] text-white font-[DM] py-2 px-4 rounded-md hover:bg-[#1c8ab3] transition duration-300"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-            <div class="bg-white rounded-lg shadow-md p-6">
-              <h3 class="text-xl font-semibold mb-4 font-[DM]">
-                Contact Information
-              </h3>
-              <ul class="space-y-4">
-                <li class="flex items-center">
-                  <i class="ri-map-pin-line text-[#28abe3] text-xl mr-3"></i>
-                  <span class="font-[DM] text-lg"
-                    >Shree Raj Residency, Sisva-Valvod Rd, Sisva, Gujarat
-                    388530</span
-                  >
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-phone-line text-[#28abe3] text-xl mr-3"></i>
-                  <span class="font-[DM] text-lg">+91 70411 93995</span>
-                </li>
-                <li class="flex items-center">
-                  <i class="ri-mail-line text-[#28abe3] text-xl mr-3"></i>
-                  <span class="font-[DM] text-lg"
-                    >timestechsoftwares@gmail.com</span
-                  >
-                </li>
-              </ul>
-              <div class="mt-6 flex justify-center flex-col items-center">
-                <h4 class="text-lg font-semibold mb-2 mt-4 font-[DM]">
-                  Follow Us
-                </h4>
-                <div class="flex space-x-4">
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-facebook-fill text-2xl"></i
-                  ></a>
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-twitter-fill text-2xl"></i
-                  ></a>
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-linkedin-fill text-2xl"></i
-                  ></a>
-                  <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"
-                    ><i class="ri-instagram-fill text-2xl"></i
-                  ></a>
-                </div>
+          <p
+            class="px-4 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg lg:text-center text-justify font-light mx-auto">
+            We craft innovative web applications that meet your business
+            needs, using the latest technologies to ensure scalability,
+            security, and usability.
+          </p>
+
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-code-s-slash-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/webdev.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Custom Web Applications
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              We build scalable and robust web applications tailored to your
+              business needs.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-responsive-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/responsive.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Responsive Design
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Our designs ensure a seamless experience across all devices and
+              screen sizes.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-speed-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/performance.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Performance Optimization
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              We optimize your website to achieve fast load times and smooth
+              performance.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-lock-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/folder.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Secure Development
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Our security-first approach protects your website from potential
+              threats.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-line-chart-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/seo.gif" class="w-20" alt="" />
+
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              SEO Optimization
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Boost your website's visibility with our effective SEO
+              strategies.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-user-heart-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/web-d.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              User Experience Design
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              We design intuitive and engaging interfaces for a superior user
+              experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- App Developement -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12">
+          <h2 class="text-3xl px-4 text-center font-bold font-[DM] text-black">
+            App Development
+          </h2>
+          <p
+            class="text-justify lg:text-center px-4 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg font-light mx-auto">
+            We craft innovative mobile apps that meet your business needs,
+            using the latest technologies to deliver scalable, secure, and
+            user-friendly solutions that drive engagement and revenue.
+          </p>
+
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-code-s-slash-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/webdev.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Custom App Design
+            </h3>
+            <p class="text-gray-700 text-center w-full text-lg">
+              We build scalable and robust web applications tailored to your
+              business needs.
+            </p>
+          </div>
+
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-responsive-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/responsive.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Native App Development
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Our designs ensure a seamless experience across all devices and
+              screen sizes.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-speed-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/performance.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Cross-Platform App Development
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              We optimize your website to achieve fast load times and smooth
+              performance.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-user-heart-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/web-d.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              User Experience Design
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              We design intuitive and engaging interfaces for a superior user
+              experience.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-lock-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/folder.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Testing and Quality Assurance
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Our security-first approach protects your website from potential
+              threats.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-line-chart-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/seo.gif" class="w-20" alt="" />
+
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Deployment and Maintenance
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Boost your website's visibility with our effective SEO
+              strategies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Logo & Banner Design -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-center mb-12">
+          <h2 class="text-3xl text-center font-bold font-[DM] text-black">
+            Logo & Banner Design
+          </h2>
+          <p
+            class="text-justify g:text-center px-4 sm:w-[60%] md:w-[50%] lg:w-[40%] xl:w-[84%] mt-5 mb-1 text-lg font-light mx-auto">
+            We craft innovative mobile applications that meet your business
+            needs, using the latest technologies to deliver scalable, secure,
+            and user-friendly apps that drive engagement and revenue.
+          </p>
+
+          <div class="w-20 h-1 bg-[#28abe3] mt-4"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-code-s-slash-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/webdev.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Custom Logo Design
+            </h3>
+            <p class="text-gray-700 w-full text-center text-lg">
+              We build scalable and robust web applications tailored to your
+              business needs.
+            </p>
+          </div>
+
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-responsive-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/responsive.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Banner Design for Web and Print
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Our designs ensure a seamless experience across all devices and
+              screen sizes.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-speed-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/performance.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Brand Guidelines Development
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              We optimize your website to achieve fast load times and smooth
+              performance.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-user-heart-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/web-d.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">Icon Design</h3>
+            <p class="text-gray-700 text-center text-lg">
+              We design intuitive and engaging interfaces for a superior user
+              experience.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-lock-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/folder.gif" class="w-20" alt="" />
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Typography and Color Palette Selection
+            </h3>
+            <p class="text-gray-700 text-center text-lg">
+              Our security-first approach protects your website from potential
+              threats.
+            </p>
+          </div>
+          <div
+            class="webdev-item bg-white p-6 rounded-lg shadow-lg hover:shadow-xl flex justify-center flex-col items-center transition-shadow duration-300">
+            <!-- <i class="ri-line-chart-line text-4xl text-[#28abe3] mb-4"></i> -->
+            <img src="../public/seo.gif" class="w-20" alt="" />
+
+            <h3 class="text-xl font-semibold mb-2 font-[DM]">
+              Deployment and Maintenance
+            </h3>
+            <p class="text-gray-700 text-lg text-center">
+              Boost your website's visibility with our effective SEO
+              strategies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us Form -->
+    <section id="contact" class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-8 font-[DM]">
+          Contact Us
+        </h2>
+        <div class="w-20 h-1 bg-[#28abe3] mx-auto"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[DM]">Get in Touch</h3>
+            <form action="https://formspree.io/f/manywpeq" method="POST">
+              <div class="mb-4">
+                <label for="name" class="block text-gray-700 font-[DM] mb-2">Name</label>
+                <input type="text" id="name" name="name"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-[DM] mb-2">Email</label>
+                <input type="email" id="email" name="email"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required />
+              </div>
+              <div class="mb-4">
+                <label for="message" class="block text-gray-700 font-[DM] mb-2">Message</label>
+                <textarea id="message" name="message" rows="4"
+                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#28abe3]"
+                  required></textarea>
+              </div>
+              <button type="submit"
+                class="bg-[#28abe3] text-white font-[DM] py-2 px-4 rounded-md hover:bg-[#1c8ab3] transition duration-300">
+                Send Message
+              </button>
+            </form>
+          </div>
+          <div class="bg-white rounded-lg shadow-md p-6">
+            <h3 class="text-xl font-semibold mb-4 font-[DM]">
+              Contact Information
+            </h3>
+            <ul class="space-y-4">
+              <li class="flex items-center">
+                <i class="ri-map-pin-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[DM] text-lg"><a target="_blank" class="text-[#28abe3]" href="https://maps.app.goo.gl/KVQyZbJmHfDh4j627" target="_blank">Shree Raj Residency, Sisva-Valvod Rd, Sisva, Gujarat
+                  388530</a></span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-phone-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[DM] text-lg"><a target="_blank" class="text-[#28abe3]" href="https://wa.link/zj9aig">+91 70411 93995</a></span>
+              </li>
+              <li class="flex items-center">
+                <i class="ri-mail-line text-[#28abe3] text-xl mr-3"></i>
+                <span class="font-[DM] text-lg"><a
+                    target="_blank"
+                    class="text-[#28abe3]"
+                    href="mailto:contact@timestechsoftwares.com">contact@timestechsoftwares.com</a></span>
+              </li>
+            </ul>
+            <div class="mt-6 flex justify-center flex-col items-center">
+              <h4 class="text-lg font-semibold mb-2 mt-4 font-[DM]">
+                Follow Us
+              </h4>
+              <div class="flex space-x-4">
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-facebook-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-twitter-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-linkedin-fill text-2xl"></i></a>
+                <a href="#" class="text-[#28abe3] hover:text-[#1c8ab3]"><i class="ri-instagram-fill text-2xl"></i></a>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Footer Section -->
-      <footer class="bg-gray-800 text-white py-6">
-        <div class="mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex flex-col md:flex-row justify-center items-center">
-            <div class="text-center md:text-left mb-4 md:mb-0">
-              <p>
-                &copy; Copyright 2024. All Rights Reserved to Futuristic Trade
-                DMCC | Design and Developed by
-                <a href="/timestech" class="text-[#28abe4]"
-                  >Timestech Softwares</a
-                >
-              </p>
-            </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <div class="text-center md:text-left mb-4 md:mb-0">
+            <p>
+              &copy; Copyright 2024. All Rights Reserved to Futuristic Trade
+              DMCC | Design and Developed by
+              <a href="/timestech" class="text-[#28abe4]">Timestech Softwares</a>
+            </p>
           </div>
         </div>
-      </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-    <script type="module" src="../scripts/services.js"></script>
-  </body>
+      </div>
+    </footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script type="module" src="../scripts/services.js"></script>
+</body>
+
 </html>

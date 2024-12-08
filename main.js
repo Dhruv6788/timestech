@@ -1,21 +1,23 @@
-// import e from"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";let menuButton=document.getElementById("menu-button"),mobileMenu=document.getElementById("mobile-menu");menuButton.addEventListener("click",()=>{mobileMenu.classList.toggle("hidden")}),window.addEventListener("load",()=>{document.getElementById("preloader").style.display="none",document.getElementById("main").classList.remove("hidden"),gsap.from("main",{opacity:0,duration:1.5})});let headerText=document.getElementById("header-text"),textArray=["Unlock Your Digital Future","Explore Cutting-Edge Solutions","Transform Your Business",],index=0;function changeHeaderText(){headerText.textContent=textArray[index],index=(index+1)%textArray.length}setInterval(changeHeaderText,4e3);let scrollToTopBtn=document.getElementById("scrollToTopBtn");window.addEventListener("scroll",()=>{window.scrollY>100?scrollToTopBtn.style.opacity="1":scrollToTopBtn.style.opacity="0"}),scrollToTopBtn.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"})});let swiperElement=document.getElementsByTagName("swiper-container");var swiper=new e(".swiper",{pagination:{el:".swiper-pagination",dynamicBullets:!0}});
-
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
-
-const menuButton = document.getElementById("menu-button");
+const menu = document.getElementById("menu");
 const mobileMenu = document.getElementById("mobile-menu");
+const menuIcon = document.getElementById("menu-icon");
 
-menuButton.addEventListener("click", () => {
+menu.addEventListener("change", () => {
+  if(menu.checked){
+    menuIcon.classList.remove("ri-menu-3-line");
+    menuIcon.classList.add("ri-close-line");
+  }
+  else{
+    menuIcon.classList.remove("ri-close-line");
+    menuIcon.classList.add("ri-menu-3-line");
+  }
   mobileMenu.classList.toggle("hidden");
 });
 
 window.addEventListener("load", () => {
   document.getElementById("preloader").style.display = "none";
   document.getElementById("main").classList.remove("hidden");
-  gsap.from("main", {
-    opacity: 0,
-    duration: 1.5,
-  });
 });
 
 let headerText = document.getElementById("header-text");

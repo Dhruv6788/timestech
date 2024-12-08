@@ -1,8 +1,19 @@
-const menuButton = document.getElementById("menu-button");
-const mobileMenu = document.getElementById("mobile-menu");
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+const menu = document.getElementById("menu");
+const mobileMenu = document.getElementById("mobile-menu");
+const menuIcon = document.getElementById("menu-icon");
 
-
+menu.addEventListener("change", () => {
+  if(menu.checked){
+    menuIcon.classList.remove("ri-menu-3-line");
+    menuIcon.classList.add("ri-close-line");
+  }
+  else{
+    menuIcon.classList.remove("ri-close-line");
+    menuIcon.classList.add("ri-menu-3-line");
+  }
+  mobileMenu.classList.toggle("hidden");
+});
 window.addEventListener("load", () => {
   document.getElementById("preloader").style.display = "none";
   document.getElementById("main").classList.remove("hidden");
